@@ -6,7 +6,13 @@
 
 The purpose of these EDR profiles is to constrain the OGC-API EDR standard such that clients can consume meteorological data from multiple EDR API services without having to write custom code for each of those APIs.
 
-The profiles are meant to be used as described here: https://github.com/opengeospatial/ogcapi-environmental-data-retrieval/issues/404.
+The profiles are meant to be used as described by OGC-API EDR Part 3  (https://github.com/opengeospatial/ogcapi-environmental-data-retrieval/issues/404).
+
+## Status 2025-02-28
+
+The profile for insitu-observations is incomplete, but test implementations and feedback are very much welcome. Also, an OpenAPI 3.1 document of the profile is planned, but does not exist yet.
+
+Work on profiles for other data types have not yet begun.
 
 ## Approach
 
@@ -19,23 +25,21 @@ We plan to build a set of profiles roughly mirroring the data types handled by t
 - observations / climate data
 - radar
 - warnings
+- forecast
 
 The work is 100% open source and the goal is to have a community driven effort that can be used by everyone.
 
 Lastly, we want to make the job of implementing clients and servers compliant with the profile as simple as possible. Hence, we plan to build supporting validation tools and link to examples of clients and servers.
 
-## Links
-
-### 
-
+An experimental and incomplete validation tool can be found here: https://github.com/metno/sedr.
 
 ## Roadmap
 
 A tentative plan for what to do when.
 
-### Starting august 2024: Observations data
+### Starting august 2024: Insitu observations
 
-Define the profile needs for meteorological ground observations data.
+Define the profile needs for meteorological insitu observations data.
 
 Work roughly in this order:
 
@@ -52,10 +56,6 @@ Work roughly in this order:
     - response formats for the data queries.
 
 Lastly, there are some open questions about scope: Should the profile include constraints on how to publish metadata? E.g specific rules on using OGC-API Records to publish metadata about stations? Are there overlaps between the job of WIGOS and Oscar (WMDS, WMDR?) and this profile? Also, as a matter of practicality the profile needs to be built with some understanding of how WIS2 is implemented.
-
-### Late 2024: Forecast / radar / alerts / climate data?
-
-Define the profile needs for meteorological weather forecast data. Reuse as much of the observations data profile as possible. Go back and refactor observations profile if that is required.
 
 ## License
 
