@@ -6,7 +6,7 @@ include::../requirements/requirements_class_core.adoc[]
 
 === OpenAPI
 
-An OpenAPI specification provides a machine-readable description of the API interface
+An OpenAPI specification provides a machine-readable description of the API interface.
 
 include::../requirements/core/REQ_openapi.adoc[]
 
@@ -31,25 +31,25 @@ include::../requirements/core/REQ_collection_license.adoc[]
 
 === Collection temporal extent
 
-Temporal extent of a collction
+Temporal extent of a collction.
 
 include::../requirements/core/REQ_collection_temporal_extent.adoc[]
 
 === Collection spatial extent
 
-Spatial extent of a collction
+Spatial extent of a collction.
 
 include::../requirements/core/REQ_collection_spatial_extent.adoc[]
 
-=== CoverageJSON referencing
+=== Response metadata
 
-CoverageJSON coordinate system metadata
+Metadata in the response to a data query.
 
-include::../requirements/core/REQ_coveragejson_referencing.adoc[]
+include::../recommendations/core/REC_response_metadata.adoc[]
 
 === Collection vertical extent
 
-Vertical extent of a collection
+Vertical extent of a collection.
 
 include::../recommendations/core/REC_collection_vertical_extent.adoc[]
 

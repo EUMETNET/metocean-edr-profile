@@ -23,10 +23,23 @@ The custom dimensions for which you can query the collection.
 
 include::../requirements/insitu-observations/REQ_collection_custom_dimensions.adoc[]
 
+=== Response format
+
+The response format for data queries.
+
+include::../requirements/insitu-observations/REQ_response_format.adoc[]
+
 === CoverageJSON parameters
 
-The metadata about parameters in CoverageJSON
+The metadata about parameters in CoverageJSON.
 
 include::../requirements/insitu-observations/REQ_coveragejson_parameters.adoc[]
+
+=== CoverageJSON referencing
+
+The metadata about coordinate refereing in CoverageJSON.
+
+include::../requirements/insitu-observations/REQ_coveragejson_referencing.adoc[]
+
 
 
