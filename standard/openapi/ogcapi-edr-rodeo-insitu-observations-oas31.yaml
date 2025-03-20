@@ -1,0 +1,48 @@
+openapi: 3.1.1
+info:
+  title: OGC API - Environmental Data Retrieval Standard
+  description: Example of OGC API - Environmental Data Retrieval Standard OpenAPI document
+  version: 1.2.0
+  license:
+    name: OGC License
+    url: 'https://www.ogc.org/legal'
+security: [{}]
+servers:
+  - url: 'https://example.org/edr'
+    description: Example OGC API - Environmental Data Retrieval server
+tags:
+  - name: Capabilities
+    description: Essential characteristics of the information available from the API.
+  - name: Collection metadata
+    description: Description of the information available from the collections
+  - name: Instance metadata
+    description: Description of the information available from the instances of a collection
+  - name: Collection data queries
+    description: Data queries available.
+  - name: Instance data queries
+    description: Data queries available on instances of the collection.
+paths:
+  # OGC API - Environmental Data Retrieval: Core
+  /:
+    $ref: oas31-insitu-observations/paths/core/landingPage.yaml
+  /conformance:
+    $ref: oas31-insitu-observations/paths/core/conformance.yaml
+  /api:
+    $ref: oas31-insitu-observations/paths/core/openapi.yaml
+  # OGC API - Environmental Data Retrieval: Collections
+  /collections:
+    $ref: oas31-insitu-observations/paths/collections/collections.yaml
+  /collections/{collectionId}:
+    $ref: oas31-insitu-observations/paths/collections/collection.yaml
+  # OGC API - Environmental Data Retrieval: Queries
+  /collections/{collectionId}/position:
+    $ref: oas31-insitu-observations/paths/queries/position.yaml
+  /collections/{collectionId}/radius:
+    $ref: oas31-insitu-observations/paths/queries/radius.yaml
+  /collections/{collectionId}/area:
+    $ref: oas31-insitu-observations/paths/queries/area.yaml
+  /collections/{collectionId}/locations:
+    $ref: oas31-insitu-observations/paths/queries/locations.yaml
+  /collections/{collectionId}/locations/{locationId}:
+    $ref: oas31-insitu-observations/paths/queries/location.yaml
+

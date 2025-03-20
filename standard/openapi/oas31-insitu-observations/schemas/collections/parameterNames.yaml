@@ -1,0 +1,85 @@
+type: object
+title: Parameter name
+description: Definition of data parameter
+required:
+  - type
+  - observedProperty
+  - label
+  - description
+  - unit
+  - metocean:standard_name
+  - metocean:level
+properties:
+  type:
+    description: type
+    enum:
+      - Parameter
+  description:
+    type: string
+  label:
+    type: string
+    examples:
+      - Air Temperature
+  data-type:
+    description: Data type of returned parameter
+    type: string
+    enum:
+      - integer
+      - float
+      - string                
+  unit:
+    $ref: units.yaml
+  observedProperty:
+    $ref: observedPropertyCollection.yaml
+  categoryEncoding:
+    type: object
+    additionalProperties:
+      oneOf:
+        - type: integer
+        - type: array
+          items:
+            type: integer
+  extent:
+    $ref: extent.yaml
+  id:
+    description: Unique ID of the parameter, this is the value used for querying the data
+    type: string
+  measurementType:
+    type: object
+    title: Parameter measurement approach
+    description: Approach to calculating the data values
+    required:
+      - method
+    properties:
+      method:
+        type: string
+        examples: 
+          - mean
+      duration:
+        type: string
+        title: Measurement time duration
+        description: The time duration that the value was calculated for as an RFC3339
+          duration value.  If the method value is instantaneous this value is
+          not required.
+        examples: 
+          - PT10M
+  metocean:standard_name:
+    type: string
+    description: The CF-convention standard name of the parameter.
+  metocean:level:
+    type: number
+    description: Height of measurement above ground level in meters.
+examples:
+  - type: Parameter
+    id: air_temperature_1_5m
+    description: Air temperature at 1.5m above the surface
+    label: Air temperature at 1.5m above the surface
+    metocean:standard_name: air_temperature
+    metocean:level: 1.5
+    unit:
+      symbol:
+        value: °C
+        type: https://qudt.org/vocab/unit/DEG_C
+    observedProperty:
+      id: https://vocab.nerc.ac.uk/standard_name/air_temperature/
+      label: Air temperature

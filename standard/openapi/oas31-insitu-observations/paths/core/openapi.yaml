@@ -1,0 +1,13 @@
+# Landing page
+get:
+  tags:
+    - OpenAPI
+  summary: OpenAPI v3.1 document for this API
+  operationId: getOpenAPIDocument
+  responses:
+    '200':
+      description: OpenAPI v3.1 document for this API
+      content:
+        application/vnd.oai.openapi+json;version=3.1:
+          schema:
+            $ref: ../../../insitu-observations-bundle.yaml
