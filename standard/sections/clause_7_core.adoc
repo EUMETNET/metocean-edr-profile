@@ -28,7 +28,6 @@ A license describes the usage permissions for the data in a collection.
 
 include::../requirements/core/REQ_collection_license.adoc[]
 
-
 === Collection temporal extent
 
 Temporal extent of a collction.
@@ -41,11 +40,11 @@ Spatial extent of a collction.
 
 include::../requirements/core/REQ_collection_spatial_extent.adoc[]
 
-=== Response metadata
+=== Data query response metadata
 
 Metadata in the response to a data query.
 
-include::../recommendations/core/REC_response_metadata.adoc[]
+include::../recommendations/core/REC_data_query_response_metadata.adoc[]
 
 === Collection vertical extent
 

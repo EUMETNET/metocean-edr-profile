@@ -1,0 +1,28 @@
+[[ats_insitu-observations_data_query_response_format]]
+====
+[%metadata]
+label:: /conf/insitu-observations/data_query_response_format
+subject:: /req/insitu-observations/data_query_response_format
+test-purpose:: Validate that a RODEO EDR Insitu observations Profile API has correct response format for data queries.
+
+[.component,class=test method]
+=====
+
+[.component,class=step]
+--
+Issue an HTTP GET request to path `/collections`.
+--
+
+[.component,class=step]
+--
+Check that the value of the returned HTTP status header is 200.
+--
+
+[.component,class=step]
+--
+In the returned document, for each object in `data_queries` for each collection in `collections` make a corresponding data query request and check that the returned response has status 200 and has a http response header `Content-Type` with value `application/vnd.cov+json`.
+--
+
+=====
+
+====
