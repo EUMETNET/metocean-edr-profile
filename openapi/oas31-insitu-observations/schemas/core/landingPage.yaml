@@ -5,13 +5,14 @@ properties:
   title:
     type: string
     examples: 
-      - Meteorological data server
-  description:
+      - WebAPI for meteorological insitu-observations for Europe.
     type: string
+  description:
     examples: 
-      - Access to Meteorological data via a Web API that conforms to the OGC API Environmental Data Retrieval specification.
+      - WebAPI for meteorological insitu-observations for Europe. It is based on the OGC API Environmental Data Retrieval specification, and is compliant with the EUMETNET EDR Insitu-observations profile.
   links:
     type: array
+    minItems: 4
     items:
       $ref: link.yaml
     examples:
@@ -42,8 +43,11 @@ properties:
     examples:
       - - Temperature
         - Wind
-        - Point
-        - Trajectory
+        - Radius
+        - Area
+        - Locations
+        - Observations
+        - Meteorology
   provider:
     type: object
     properties:

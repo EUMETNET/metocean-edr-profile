@@ -8,6 +8,9 @@ The purpose of these EDR profiles is to constrain the OGC-API EDR standard such 
 
 The profiles are meant to be used as described by OGC-API EDR Part 3  (https://github.com/opengeospatial/ogcapi-environmental-data-retrieval/issues/404).
 
+
+[An experimental guide for how to use the profile](docs.md)
+
 ## Status 2025-02-28
 
 The profile for insitu-observations is incomplete, but test implementations and feedback are very much welcome. Also, an OpenAPI 3.1 document of the profile is planned, but does not exist yet.

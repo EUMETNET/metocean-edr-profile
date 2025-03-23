@@ -10,6 +10,7 @@ required:
 properties:
   links:
     type: array
+    minItems: 1
     items:
       $ref: ../core/link.yaml
     examples:
@@ -57,7 +58,7 @@ properties:
     description: description of the collection
     type: string
     examples: 
-      - Last 24 hours Metar observations
+      - This collection contains insitu observations for a large portion of the European countries. The collection contains data from near real-time and until 24 hours old. 
   keywords:
     description: List of keywords which help to describe the collection
     type: array
