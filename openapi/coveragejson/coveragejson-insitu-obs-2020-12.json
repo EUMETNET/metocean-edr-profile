@@ -22,231 +22,6 @@
             },
             "t": {
               "values": [
-                "2025-03-19T09:08:00Z",
-                "2025-03-19T09:09:00Z"
-              ]
-            }
-          },
-          "referencing": [
-            {
-              "coordinates": [
-                "y",
-                "x"
-              ],
-              "system": {
-                "type": "GeographicCRS",
-                "id": "OGC:CRS84"
-              }
-            },
-            {
-              "coordinates": [
-                "t"
-              ],
-              "system": {
-                "type": "TemporalRS",
-                "calendar": "Gregorian"
-              }
-            }
-          ]
-        },
-        "parameters": {
-          "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1M": {
-            "type": "Parameter",
-            "description": {
-              "en": "Surface downwelling longwave flux in air at 0.0m, aggregated over PT1M with method 'mean'"
-            },
-            "observedProperty": {
-              "id": "https://vocab.nerc.ac.uk/standard_name/surface_downwelling_longwave_flux_in_air",
-              "label": {
-                "en": "Surface downwelling longwave flux in air"
-              }
-            },
-            "unit": {
-              "label": {
-                "en": "W/m2"
-              }
-            },
-            "measurementType": {
-              "method": "mean",
-              "period": "PT1M"
-            },
-            "metocean:standard_name": "surface_downwelling_longwave_flux_in_air",
-            "metocean:level": 0.0
-          },
-          "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1M": {
-            "type": "Parameter",
-            "description": {
-              "en": "Surface downwelling shortwave flux in air at 0.0m, aggregated over PT1M with method 'mean'"
-            },
-            "observedProperty": {
-              "id": "https://vocab.nerc.ac.uk/standard_name/surface_downwelling_shortwave_flux_in_air",
-              "label": {
-                "en": "Surface downwelling shortwave flux in air"
-              }
-            },
-            "unit": {
-              "label": {
-                "en": "W/m2"
-              }
-            },
-            "measurementType": {
-              "method": "mean",
-              "period": "PT1M"
-            },
-            "metocean:standard_name": "surface_downwelling_shortwave_flux_in_air",
-            "metocean:level": 0.0
-          }
-        },
-        "ranges": {
-          "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1M": {
-            "type": "NdArray",
-            "dataType": "float",
-            "axisNames": [
-              "t",
-              "y",
-              "x"
-            ],
-            "shape": [
-              2,
-              1,
-              1
-            ],
-            "values": [
-              246.0,
-              245.600006
-            ]
-          },
-          "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1M": {
-            "type": "NdArray",
-            "dataType": "float",
-            "axisNames": [
-              "t",
-              "y",
-              "x"
-            ],
-            "shape": [
-              2,
-              1,
-              1
-            ],
-            "values": [
-              75.5,
-              76.1999969
-            ]
-          }
-        },
-        "metocean:wigosId": "0-20000-0-01001"
-      },
-      {
-        "type": "Coverage",
-        "domain": {
-          "type": "Domain",
-          "domainType": "PointSeries",
-          "axes": {
-            "x": {
-              "values": [
-                -8.669
-              ]
-            },
-            "y": {
-              "values": [
-                70.9394
-              ]
-            },
-            "t": {
-              "values": [
-                "2025-03-19T09:10:00Z",
-                "2025-03-19T09:20:00Z"
-              ]
-            }
-          },
-          "referencing": [
-            {
-              "coordinates": [
-                "y",
-                "x"
-              ],
-              "system": {
-                "type": "GeographicCRS",
-                "id": "OGC:CRS84"
-              }
-            },
-            {
-              "coordinates": [
-                "t"
-              ],
-              "system": {
-                "type": "TemporalRS",
-                "calendar": "Gregorian"
-              }
-            }
-          ]
-        },
-        "parameters": {
-          "precipitation_amount:0.0:sum:PT0S": {
-            "type": "Parameter",
-            "description": {
-              "en": "Precipitation amount at 0.0m, aggregated over PT0S with method 'sum'"
-            },
-            "observedProperty": {
-              "id": "https://vocab.nerc.ac.uk/standard_name/precipitation_amount",
-              "label": {
-                "en": "Precipitation amount"
-              }
-            },
-            "unit": {
-              "label": {
-                "en": "kg/m2"
-              }
-            },
-            "measurementType": {
-              "method": "sum",
-              "period": "PT0S"
-            },
-            "metocean:standard_name": "precipitation_amount",
-            "metocean:level": 0.0
-          }
-        },
-        "ranges": {
-          "precipitation_amount:0.0:sum:PT0S": {
-            "type": "NdArray",
-            "dataType": "float",
-            "axisNames": [
-              "t",
-              "y",
-              "x"
-            ],
-            "shape": [
-              2,
-              1,
-              1
-            ],
-            "values": [
-              261.177002,
-              261.177002
-            ]
-          }
-        },
-        "metocean:wigosId": "0-20000-0-01001"
-      },
-      {
-        "type": "Coverage",
-        "domain": {
-          "type": "Domain",
-          "domainType": "PointSeries",
-          "axes": {
-            "x": {
-              "values": [
-                -8.669
-              ]
-            },
-            "y": {
-              "values": [
-                70.9394
-              ]
-            },
-            "t": {
-              "values": [
                 "2025-03-19T09:10:00Z",
                 "2025-03-19T09:20:00Z"
               ]
@@ -287,6 +62,10 @@
               }
             },
             "unit": {
+              "symbol": {
+                "type": "https://qudt.org/vocab/unit/DEG_C",
+                "value": "°C"
+              },
               "label": {
                 "en": "degC"
               }
@@ -367,98 +146,6 @@
           ]
         },
         "parameters": {
-          "precipitation_amount:0.0:sum:PT10M": {
-            "type": "Parameter",
-            "description": {
-              "en": "Precipitation amount at 0.0m, aggregated over PT10M with method 'sum'"
-            },
-            "observedProperty": {
-              "id": "https://vocab.nerc.ac.uk/standard_name/precipitation_amount",
-              "label": {
-                "en": "Precipitation amount"
-              }
-            },
-            "unit": {
-              "label": {
-                "en": "kg/m2"
-              }
-            },
-            "measurementType": {
-              "method": "sum",
-              "period": "PT10M"
-            },
-            "metocean:standard_name": "precipitation_amount",
-            "metocean:level": 0.0
-          }
-        },
-        "ranges": {
-          "precipitation_amount:0.0:sum:PT10M": {
-            "type": "NdArray",
-            "dataType": "float",
-            "axisNames": [
-              "t",
-              "y",
-              "x"
-            ],
-            "shape": [
-              2,
-              1,
-              1
-            ],
-            "values": [
-              0.0,
-              0.0
-            ]
-          }
-        },
-        "metocean:wigosId": "0-20000-0-01001"
-      },
-      {
-        "type": "Coverage",
-        "domain": {
-          "type": "Domain",
-          "domainType": "PointSeries",
-          "axes": {
-            "x": {
-              "values": [
-                -8.669
-              ]
-            },
-            "y": {
-              "values": [
-                70.9394
-              ]
-            },
-            "t": {
-              "values": [
-                "2025-03-19T09:10:00Z",
-                "2025-03-19T09:20:00Z"
-              ]
-            }
-          },
-          "referencing": [
-            {
-              "coordinates": [
-                "y",
-                "x"
-              ],
-              "system": {
-                "type": "GeographicCRS",
-                "id": "OGC:CRS84"
-              }
-            },
-            {
-              "coordinates": [
-                "t"
-              ],
-              "system": {
-                "type": "TemporalRS",
-                "calendar": "Gregorian"
-              }
-            }
-          ]
-        },
-        "parameters": {
           "wind_from_direction:10.0:point:PT0S": {
             "type": "Parameter",
             "description": {
@@ -473,6 +160,10 @@
             "unit": {
               "label": {
                 "en": "degrees"
+              },
+              "symbol": {
+                "type": "https://qudt.org/vocab/unit/DEG",
+                "value": "°"
               }
             },
             "measurementType": {
@@ -496,6 +187,10 @@
             "unit": {
               "label": {
                 "en": "m/s"
+              },
+              "symbol" : {
+                "type": "https://qudt.org/vocab/unit/M-PER-SEC",
+                "value": "m/s"
               }
             },
             "measurementType": {
@@ -519,6 +214,10 @@
             "unit": {
               "label": {
                 "en": "m/s"
+              },
+              "symbol" : {
+                "type": "https://qudt.org/vocab/unit/M-PER-SEC",
+                "value": "m/s"
               }
             },
             "measurementType": {
@@ -564,190 +263,6 @@
             "values": [
               3.70000005,
               2.5999999
-            ]
-          }
-        },
-        "metocean:wigosId": "0-20000-0-01001"
-      },
-      {
-        "type": "Coverage",
-        "domain": {
-          "type": "Domain",
-          "domainType": "PointSeries",
-          "axes": {
-            "x": {
-              "values": [
-                -8.669
-              ]
-            },
-            "y": {
-              "values": [
-                70.9394
-              ]
-            },
-            "t": {
-              "values": [
-                "2025-03-19T09:10:00Z",
-                "2025-03-19T09:20:00Z"
-              ]
-            }
-          },
-          "referencing": [
-            {
-              "coordinates": [
-                "y",
-                "x"
-              ],
-              "system": {
-                "type": "GeographicCRS",
-                "id": "OGC:CRS84"
-              }
-            },
-            {
-              "coordinates": [
-                "t"
-              ],
-              "system": {
-                "type": "TemporalRS",
-                "calendar": "Gregorian"
-              }
-            }
-          ]
-        },
-        "parameters": {
-          "cloud_area_fraction:0.0:point:PT0S": {
-            "type": "Parameter",
-            "description": {
-              "en": "Cloud area fraction at 0.0m, aggregated over PT0S with method 'point'"
-            },
-            "observedProperty": {
-              "id": "https://vocab.nerc.ac.uk/standard_name/cloud_area_fraction",
-              "label": {
-                "en": "Cloud area fraction"
-              }
-            },
-            "unit": {
-              "label": {
-                "en": "oktas"
-              }
-            },
-            "measurementType": {
-              "method": "point",
-              "period": "PT0S"
-            },
-            "metocean:standard_name": "cloud_area_fraction",
-            "metocean:level": 0.0
-          }
-        },
-        "ranges": {
-          "cloud_area_fraction:0.0:point:PT0S": {
-            "type": "NdArray",
-            "dataType": "float",
-            "axisNames": [
-              "t",
-              "y",
-              "x"
-            ],
-            "shape": [
-              2,
-              1,
-              1
-            ],
-            "values": [
-              7.0,
-              8.0
-            ]
-          }
-        },
-        "metocean:wigosId": "0-20000-0-01001"
-      },
-      {
-        "type": "Coverage",
-        "domain": {
-          "type": "Domain",
-          "domainType": "PointSeries",
-          "axes": {
-            "x": {
-              "values": [
-                -8.669
-              ]
-            },
-            "y": {
-              "values": [
-                70.9394
-              ]
-            },
-            "t": {
-              "values": [
-                "2025-03-19T10:00:00Z",
-                "2025-03-19T11:00:00Z"
-              ]
-            }
-          },
-          "referencing": [
-            {
-              "coordinates": [
-                "y",
-                "x"
-              ],
-              "system": {
-                "type": "GeographicCRS",
-                "id": "OGC:CRS84"
-              }
-            },
-            {
-              "coordinates": [
-                "t"
-              ],
-              "system": {
-                "type": "TemporalRS",
-                "calendar": "Gregorian"
-              }
-            }
-          ]
-        },
-        "parameters": {
-          "relative_humidity:2.0:point:PT0S": {
-            "type": "Parameter",
-            "description": {
-              "en": "Relative humidity at 2.0m, aggregated over PT0S with method 'point'"
-            },
-            "observedProperty": {
-              "id": "https://vocab.nerc.ac.uk/standard_name/relative_humidity",
-              "label": {
-                "en": "Relative humidity"
-              }
-            },
-            "unit": {
-              "label": {
-                "en": "percent"
-              }
-            },
-            "measurementType": {
-              "method": "point",
-              "period": "PT0S"
-            },
-            "metocean:standard_name": "relative_humidity",
-            "metocean:level": 2.0
-          }
-        },
-        "ranges": {
-          "relative_humidity:2.0:point:PT0S": {
-            "type": "NdArray",
-            "dataType": "float",
-            "axisNames": [
-              "t",
-              "y",
-              "x"
-            ],
-            "shape": [
-              2,
-              1,
-              1
-            ],
-            "values": [
-              66.5999985,
-              67.5
             ]
           }
         },
