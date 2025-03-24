@@ -1,13 +1,23 @@
 # Profile documentation
 
+## Profile requirements
+
+All the requirements for the profiles are described in `standard` folder. A complete html document of the profiles can be produced with the command:
+
+```
+cd standard
+asciidoctor --trace -o rodeo-edr-profile.html index.adoc
+```
+
 ## OpenAPI
+
+The OpenAPI documents for the profiles can be found in `openapi`folder. 
 
 The OpenAPI documents in this repo is based on the documents from https://github.com/opengeospatial/ogcapi-environmental-data-retrieval.
 
-[openapi/oas31](openapi/oas31/) is the openapi documents for the core profile
+[openapi/edr/oas31](openapi/edr/oas31/) is the openapi documents for the core part of the profile.
 
-[openapi/oas31-insitu-observations](openapi/oas31-insitu-observations) is the openapi documents for the core profile.
-
+[openapi/edr/oas31-insitu-observations](openapi/edr/oas31-insitu-observations) is the openapi documents for the insitu-observations profile.
 
 ## Validate your service for compliance
 
@@ -24,7 +34,7 @@ You can use this to get some live examples while implementing your own service.
 ```shell
 brew install redocly-cli
 brew install jq
-cd openapi
+cd openapi/edr
 npm install @stoplight/prism-cli
 ```
 
@@ -33,7 +43,7 @@ npm install @stoplight/prism-cli
 ```shell
 npm install @redocly/cli@latest
 sudo apt-get install jq
-cd openapi
+cd openapi/edr
 npm install @stoplight/prism-cli
 ```
 
@@ -41,7 +51,7 @@ npm install @stoplight/prism-cli
 Start mock service:
 
 ```shell
-cd openapi
+cd openapi/edr
 redocly bundle ogcapi-edr-rodeo-insitu-observations-oas31.yaml --output insitu-observations-bundle.yaml
 prism mock insitu-observations-bundle.yaml
 ```

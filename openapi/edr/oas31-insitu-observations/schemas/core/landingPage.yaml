@@ -6,7 +6,6 @@ properties:
     type: string
     examples: 
       - WebAPI for meteorological insitu-observations for Europe.
-    type: string
   description:
     examples: 
       - WebAPI for meteorological insitu-observations for Europe. It is based on the OGC API Environmental Data Retrieval specification, and is compliant with the EUMETNET EDR Insitu-observations profile.
@@ -16,7 +15,7 @@ properties:
     items:
       $ref: link.yaml
     examples:
-      - - href: https://example.org/edr/api
+      - - href: https://example.org/api
           hreflang: en
           rel: service-desc
           type: application/vnd.oai.openapi+json;version=3.1
@@ -26,12 +25,12 @@ properties:
           rel: service-doc
           type: text/html
           title: "Web documentation"
-        - href: https://example.org/edr/conformance
+        - href: https://example.org/conformance
           hreflang: en
           rel: data
           type: application/json
           title: ""
-        - href: https://example.org/edr/collections
+        - href: https://example.org/collections
           hreflang: en
           rel: data
           type: application/json
