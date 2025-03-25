@@ -37,7 +37,7 @@ include::../requirements/insitu-observations/REQ_coveragejson_parameters.adoc[]
 
 === CoverageJSON referencing
 
-The metadata about coordinate refereing in CoverageJSON.
+Coordinate referencing metadata in CoverageJSON.
 
 include::../requirements/insitu-observations/REQ_coveragejson_referencing.adoc[]
 
