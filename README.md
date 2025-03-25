@@ -27,6 +27,8 @@ We plan to build a set of profiles roughly mirroring the data types handled by t
 - warnings
 - forecast
 
+There is also a shared conformance class `Core`. `Core` will have shared requirements for EDR, while the data type specific conformance classes will have more specific requirements for EDR plus requirements for the response format.
+
 The work is 100% open source and the goal is to have a community driven effort that can be used by everyone.
 
 Lastly, we want to make the job of implementing clients and servers compliant with the profile as simple as possible. Hence, we plan to build supporting validation tools and link to examples of clients and servers.

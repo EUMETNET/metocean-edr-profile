@@ -1,7 +1,7 @@
-[[req_core_coveragejson_referencing]]
+[[req_insitu-observations_coveragejson_referencing]]
 [width="90%",cols="2,6a"]
 |===
-^|*Requirement {counter:req-id}* |*/req/core/coveragejson_referencing*
+^|*Requirement {counter:req-id}* |*/req/insitu-observations/coveragejson_referencing*
 ^|A |When requesting data and crs query param is not specified the `system` property for the spatial coordinates in `domain.referencing.*` SHALL have the following values: `"type": "GeographicCRS"` and `"id": "OGC:CRS84"`.
 ^|B |When requesting data and the crs query param is specified, the `domain.referencing.*.system` object with `"type": "GeographicCRS"` SHALL have its `id` property set to the same value as the crs query param.
 |===
