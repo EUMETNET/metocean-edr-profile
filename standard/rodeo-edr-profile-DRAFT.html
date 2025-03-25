@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">The provision of Open Access to Public meteorological Data and Development of Shared federated Data Infrastructure for the Development of information Products and Services</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-02-04</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-03-25</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 0.1.0</p></td>
@@ -509,7 +509,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_collection_license">7.5. Collection license</a></li>
 <li><a href="#_collection_temporal_extent">7.6. Collection temporal extent</a></li>
 <li><a href="#_collection_spatial_extent">7.7. Collection spatial extent</a></li>
-<li><a href="#_coveragejson_referencing">7.8. CoverageJSON referencing</a></li>
+<li><a href="#_data_query_response_metadata">7.8. Data query response metadata</a></li>
 <li><a href="#_collection_vertical_extent">7.9. Collection vertical extent</a></li>
 <li><a href="#_collection_parameter_names">7.10. Collection parameter names</a></li>
 </ul>
@@ -520,7 +520,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_collection_data_queries">8.2. Collection data queries</a></li>
 <li><a href="#_collection_parameter_names_2">8.3. Collection parameter names</a></li>
 <li><a href="#_collection_custom_dimensions">8.4. Collection custom dimensions</a></li>
-<li><a href="#_coveragejson_parameters">8.5. CoverageJSON parameters</a></li>
+<li><a href="#_data_query_response_format">8.5. Data query response format</a></li>
+<li><a href="#_coveragejson_parameters">8.6. CoverageJSON parameters</a></li>
+<li><a href="#_coveragejson_referencing">8.7. CoverageJSON referencing</a></li>
 </ul>
 </li>
 <li><a href="#_conformance_class_abstract_test_suite_normative">Annex A: Conformance Class Abstract Test Suite (Normative)</a>
@@ -543,6 +545,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_collection_parameter_names_4">A.2.2. Collection parameter names</a></li>
 <li><a href="#_collection_custom_dimensions_2">A.2.3. Collection custom dimensions</a></li>
 <li><a href="#_coveragejson_parameters_2">A.2.4. Coveragejson parameters</a></li>
+<li><a href="#_data_query_response_format_2">A.2.5. Data query response format</a></li>
 </ul>
 </li>
 </ul>
@@ -973,7 +976,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="sect2">
 <h3 id="_openapi"><a class="anchor" href="#_openapi"></a>7.2. OpenAPI</h3>
 <div class="paragraph">
-<p>An OpenAPI specification provides a machine-readable description of the API interface</p>
+<p>An OpenAPI specification provides a machine-readable description of the API interface.</p>
 </div>
 <table id="req_core_openapi" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1149,7 +1152,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="sect2">
 <h3 id="_collection_temporal_extent"><a class="anchor" href="#_collection_temporal_extent"></a>7.6. Collection temporal extent</h3>
 <div class="paragraph">
-<p>Temporal extent of a collction</p>
+<p>Temporal extent of a collction.</p>
 </div>
 <table id="req_core_collection_temporal_extent" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1175,7 +1178,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="sect2">
 <h3 id="_collection_spatial_extent"><a class="anchor" href="#_collection_spatial_extent"></a>7.7. Collection spatial extent</h3>
 <div class="paragraph">
-<p>Spatial extent of a collction</p>
+<p>Spatial extent of a collction.</p>
 </div>
 <table id="req_core_collection_spatial_extent" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1217,32 +1220,26 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_coveragejson_referencing"><a class="anchor" href="#_coveragejson_referencing"></a>7.8. CoverageJSON referencing</h3>
+<h3 id="_data_query_response_metadata"><a class="anchor" href="#_data_query_response_metadata"></a>7.8. Data query response metadata</h3>
 <div class="paragraph">
-<p>CoverageJSON coordinate system metadata</p>
+<p>Metadata in the response to a data query.</p>
 </div>
-<table id="req_core_coveragejson_referencing" class="tableblock frame-all grid-all" style="width: 90%;">
+<table id="rec_core_data_query_response_metadata" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 7</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Recommendation 1</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p><strong>/req/core/coveragejson_referencing</strong></p>
+<p><strong>/rec/core/data_query_response_metadata</strong></p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">A</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>When requesting data and crs query param is not specified the <code>system</code> property for the spatial coordinates in <code>domain.referencing.*</code> SHALL have the following values: <code>"type": "GeographicCRS"</code> and <code>"id": "OGC:CRS84"</code>.</p>
-</div></div></td>
-</tr>
-<tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">B</p></td>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>When requesting data and the crs query param is specified, the <code>domain.referencing.*.system</code> object with <code>"type": "GeographicCRS"</code> SHALL have its <code>id</code> property set to the same value as the crs query param.</p>
+<p>The metadata in the response to a data query, e.g crs, parameters and units, SHOULD mirror as closely as possible the terms and vocabularies used in the collection metadata.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -1251,7 +1248,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="sect2">
 <h3 id="_collection_vertical_extent"><a class="anchor" href="#_collection_vertical_extent"></a>7.9. Collection vertical extent</h3>
 <div class="paragraph">
-<p>Vertical extent of a collection</p>
+<p>Vertical extent of a collection.</p>
 </div>
 <table id="rec_core_collection_vertical_extent" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1260,7 +1257,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Recommendation 1</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Recommendation 2</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/rec/core/collection_vertical_extent</strong></p>
 </div></div></td>
@@ -1286,7 +1283,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 8</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 7</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/core/collection_parameter_names</strong></p>
 </div></div></td>
@@ -1370,7 +1367,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 9</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 8</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_data_queries</strong></p>
 </div></div></td>
@@ -1396,7 +1393,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 10</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 9</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_parameter_names</strong></p>
 </div></div></td>
@@ -1427,16 +1424,16 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="paragraph">
 <p>The custom dimensions for which you can query the collection.</p>
 </div>
-<table id="req_core_collection_custom_dimensions" class="tableblock frame-all grid-all" style="width: 90%;">
+<table id="req_insitu-observations_collection_custom_dimensions" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 75%;">
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 11</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 10</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p><strong>/req/core/collection_custom_dimensions</strong></p>
+<p><strong>/req/insitu-observations/collection_custom_dimensions</strong></p>
 </div></div></td>
 </tr>
 <tr>
@@ -1473,9 +1470,35 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_coveragejson_parameters"><a class="anchor" href="#_coveragejson_parameters"></a>8.5. CoverageJSON parameters</h3>
+<h3 id="_data_query_response_format"><a class="anchor" href="#_data_query_response_format"></a>8.5. Data query response format</h3>
 <div class="paragraph">
-<p>The metadata about parameters in CoverageJSON</p>
+<p>The response format for data queries.</p>
+</div>
+<table id="req_insitu-observations_data_query_response_format" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 11</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p><strong>/req/insitu-observations/data_query_response_format</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>All data queries SHALL support at least CoverageJSON as response format.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_coveragejson_parameters"><a class="anchor" href="#_coveragejson_parameters"></a>8.6. CoverageJSON parameters</h3>
+<div class="paragraph">
+<p>The metadata about parameters in CoverageJSON.</p>
 </div>
 <table id="req_insitu-observations_coveragejson_parameters" class="tableblock frame-all grid-all" style="width: 90%;">
 <colgroup>
@@ -1505,6 +1528,38 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">C</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p>Each object in <code>parameters</code> SHALL have a property <code>metocean:level</code>.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_coveragejson_referencing"><a class="anchor" href="#_coveragejson_referencing"></a>8.7. CoverageJSON referencing</h3>
+<div class="paragraph">
+<p>Coordinate referencing metadata in CoverageJSON.</p>
+</div>
+<table id="req_insitu-observations_coveragejson_referencing" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 13</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p><strong>/req/insitu-observations/coveragejson_referencing</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>When requesting data and crs query param is not specified the <code>system</code> property for the spatial coordinates in <code>domain.referencing.*</code> SHALL have the following values: <code>"type": "GeographicCRS"</code> and <code>"id": "OGC:CRS84"</code>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>When requesting data and the crs query param is specified, the <code>domain.referencing.*.system</code> object with <code>"type": "GeographicCRS"</code> SHALL have its <code>id</code> property set to the same value as the crs query param.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -2279,6 +2334,54 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_data_query_response_format_2"><a class="anchor" href="#_data_query_response_format_2"></a>A.2.5. Data query response format</h4>
+<div id="ats_insitu-observations_data_query_response_format" class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">label</dt>
+<dd>
+<p>/conf/insitu-observations/data_query_response_format</p>
+</dd>
+<dt class="hdlist1">subject</dt>
+<dd>
+<p>/req/insitu-observations/data_query_response_format</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Validate that a RODEO EDR Insitu observations Profile API has correct response format for data queries.</p>
+</dd>
+</dl>
+</div>
+<div class="exampleblock component">
+<div class="content">
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Issue an HTTP GET request to path <code>/collections</code>.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Check that the value of the returned HTTP status header is 200.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>In the returned document, for each object in <code>data_queries</code> for each collection in <code>collections</code> make a corresponding data query request and check that the returned response has status 200 and has a http response header <code>Content-Type</code> with value <code>application/vnd.cov+json</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -2404,7 +2507,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-02-04 12:29:28 UTC
+Last updated 2025-03-25 12:55:27 UTC
 </div>
 </div>
 </body>
