@@ -1,0 +1,6 @@
+[[rec_core_data_query_response_metadata]]
+[width="90%",cols="2,6a"]
+|===
+^|*Recommendation {counter:rec-id}* |*/rec/core/data_query_response_metadata*
+^|A |The metadata in the response to a data query, e.g crs, parameters and units, SHOULD mirror as closely as possible the terms and vocabularies used in the collection metadata.
+|===
