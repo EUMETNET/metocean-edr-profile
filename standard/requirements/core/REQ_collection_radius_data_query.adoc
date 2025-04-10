@@ -1,0 +1,8 @@
+[[req_core_collection_radius_data_query]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/collection_radius_data_query*
+^|A |The `within_units` array in a `variables` object for a radius data query SHALL at least contain `m`, interpreted as the SI unit of length.
+^|B |When performing a radius query which includes the `limit` query parameter, this SHOULD be interpreted as requesting the limited amount of data items that are closest to the specified center of the radius.
+|===
+

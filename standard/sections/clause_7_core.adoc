@@ -57,3 +57,10 @@ include::../recommendations/core/REC_collection_vertical_extent.adoc[]
 Parameter names is an object, containing parameter objects with metadata about all parameters the collection contains.
 
 include::../requirements/core/REQ_collection_parameter_names.adoc[]
+
+=== Collection radius data query
+
+Metadata about the radius data query in a collection.
+
+include::../requirements/core/REQ_collection_radius_data_query.adoc[]
+

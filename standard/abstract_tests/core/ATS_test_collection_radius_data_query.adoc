@@ -1,0 +1,28 @@
+[[ats_core_collection_radius_data_query]]
+====
+[%metadata]
+label:: /conf/core/collection_radius_data_query
+subject:: /req/core/collection_radius_data_query
+test-purpose:: Validate that a RODEO EDR Profile API with a radius data query in a collection has correct metadata.
+
+[.component,class=test method]
+=====
+
+[.component,class=step]
+--
+Issue an HTTP GET request to path `/collections`.
+--
+
+[.component,class=step]
+--
+Check that the value of the returned HTTP status header is 200.
+--
+
+[.component,class=step]
+--
+In the response document, for each object in the `collections` array, if the `data_queries` property contains `radius`, check that the `link.variables` object for `radius` has a `within_units` array that contains at least `m`.
+--
+
+=====
+
+====
