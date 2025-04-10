@@ -3,6 +3,7 @@
 |===
 ^|*Requirement {counter:req-id}* |*/req/core/collection_radius_data_query*
 ^|A |The `within_units` array in a `variables` object for a radius data query SHALL at least contain `m`, interpreted as the SI unit of length.
-^|B |When performing a radius query which includes the `limit` query parameter, this SHOULD be interpreted as requesting the limited amount of data items that are closest to the specified center of the radius.
+^|B |`within_units` can contain more values, but all values in the array SHALL be defined as a unit https://qudt.org, and SHALL use the symbol of the unit.
+^|C |When performing a radius query which includes the `limit` query parameter, this SHOULD be interpreted as requesting the limited amount of data items that are closest to the specified center of the radius.
 |===
 
