@@ -1,0 +1,33 @@
+[[ats_core_locations_query_response_format]]
+====
+[%metadata]
+label:: /conf/core/locations_query_response_format
+subject:: /req/core/locations_query_response_format
+test-purpose:: Validate that a RODEO EDR Profile API has a correctly formated response to a locations query.
+
+[.component,class=test method]
+=====
+
+[.component,class=step]
+--
+For every collection and instance of a collection, check if `locations` exists as a key in the `data_queries` object. If so, get the `href` value from the link object with `"rel":"self"` and append `/locations` to the value and issue an HTTP GET request.
+--
+
+[.component,class=step]
+--
+Check that the value of the returned HTTP status header is 200.
+--
+
+[.component,class=step]
+--
+Check that the response http header `Content-Type` has value `application/geo+json`. 
+--
+
+[.component,class=step]
+--
+In the response document, check that it has the property `"type": "FeatureCollection"`. For each object in the `features` array, check that the properties `id` and `properties.title` are present.
+--
+
+=====
+
+====

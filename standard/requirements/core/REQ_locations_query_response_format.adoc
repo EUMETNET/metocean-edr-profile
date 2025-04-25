@@ -1,0 +1,11 @@
+[[req_core_locations_query_response_format]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/locations_query_response_format*
+^|A |The response document for a `/locations` query to a `collection` or an `instance` of a `collection` SHALL be a GeoJSON document with a FeatureCollection object.
+^|B |Each Feature object in the FeatureCollection SHALL have the following properties: `id` of type string, `properties.title` of type string.
+^|C |If the data for a location do not provide all parameters listed in the `collection`, it SHALL include `properties.parameter_names` which SHALL be a list of strings. This list SHALL be a subset of the list of keys from the `parameter_names` object in the collection.
+^|D |If there are links with more information about the location they SHALL be included in `properties.links` as a list of `link` objects. The `link` object SHALL have identical structure as link objects defined by OGC API - Common Part 1: Core.
+^|E |A more detailed description of the location MAY also be provided via `properties.description`.
+^|F |All strings SHALL be in english.
+|===
