@@ -25,7 +25,7 @@ Check that the response http header `Content-Type` has value `application/geo+js
 
 [.component,class=step]
 --
-In the response document, check that it has the property `"type": "FeatureCollection"`. For each object in the `features` array, check that the properties `id` and `properties.title` are present.
+In the response document, check that it has the property `"type": "FeatureCollection"`. For each object in the `features` array, check that the properties `id` and `properties.name` are present.
 --
 
 =====
