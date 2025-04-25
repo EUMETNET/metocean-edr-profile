@@ -37,3 +37,7 @@ include::./core/ATS_test_coveragejson_referencing.adoc[]
 ==== Collection parameter names
 
 include::./core/ATS_test_collection_parameter_names.adoc[]
+
+==== Collection radius data query
+
+include::./core/ATS_test_collection_radius_data_query.adoc[]
