@@ -1,0 +1,130 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -8.669,
+            70.9394
+          ]
+        },
+        "properties": {
+          "name": "platform-0-20000-0-01001",
+          "detail": "https://oscar.wmo.int/surface/rest/api/search/station?wigosId=0-20000-0-01001",
+          "parameter-name": [
+            "air_temperature:2.0:maximum:PT12H",
+            "air_temperature:2.0:maximum:PT1H",
+            "air_temperature:2.0:mean:PT24H",
+            "air_temperature:2.0:minimum:PT12H",
+            "air_temperature:2.0:minimum:PT1H",
+            "air_temperature:2.0:point:PT0S",
+            "cloud_area_fraction:0.0:point:PT0S",
+            "precipitation_amount:0.0:sum:PT0S",
+            "precipitation_amount:0.0:sum:PT10M",
+            "precipitation_amount:0.0:sum:PT12H",
+            "precipitation_amount:0.0:sum:PT1H",
+            "precipitation_amount:0.0:sum:PT24H",
+            "rainfall_rate:0.0:mean:PT1M",
+            "relative_humidity:2.0:mean:PT24H",
+            "relative_humidity:2.0:point:PT0S",
+            "soil_temperature:0.0:point:PT0S",
+            "surface_air_pressure:2.0:point:PT0S",
+            "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1H",
+            "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1M",
+            "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1H",
+            "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1M",
+            "surface_temperature:2.0:point:PT0S",
+            "tendency_of_surface_air_pressure:2.0:point:PT3H",
+            "wind_from_direction:10.0:maximum:PT1H",
+            "wind_from_direction:10.0:point:PT0S",
+            "wind_speed:10.0:maximum:PT1H",
+            "wind_speed:10.0:point:PT0S",
+            "wind_speed_of_gust:10.0:maximum:PT10M",
+            "wind_speed_of_gust:10.0:maximum:PT1H"
+          ]
+        },
+        "id": "0-20000-0-01001"
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            16.2433,
+            80.0555
+          ]
+        },
+        "properties": {
+          "name": "platform-0-20000-0-01002",
+          "detail": "https://oscar.wmo.int/surface/rest/api/search/station?wigosId=0-20000-0-01002",
+          "parameter-name": [
+            "air_temperature:2.0:maximum:PT12H",
+            "air_temperature:2.0:maximum:PT1H",
+            "air_temperature:2.0:mean:PT24H",
+            "air_temperature:2.0:minimum:PT12H",
+            "air_temperature:2.0:minimum:PT1H",
+            "air_temperature:2.0:point:PT0S",
+            "relative_humidity:2.0:mean:PT24H",
+            "relative_humidity:2.0:point:PT0S",
+            "soil_temperature:0.0:point:PT0S",
+            "surface_air_pressure:2.0:point:PT0S",
+            "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1H",
+            "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1H",
+            "surface_snow_thickness:0.0:point:PT0S",
+            "surface_temperature:2.0:point:PT0S",
+            "surface_upwelling_longwave_flux_in_air:0.0:mean:PT1H",
+            "surface_upwelling_shortwave_flux_in_air:0.0:mean:PT1H",
+            "tendency_of_surface_air_pressure:2.0:point:PT3H",
+            "wind_from_direction:10.0:maximum:PT1H",
+            "wind_from_direction:10.0:point:PT0S",
+            "wind_speed:10.0:maximum:PT1H",
+            "wind_speed:10.0:point:PT0S",
+            "wind_speed_of_gust:10.0:maximum:PT1H"
+          ]
+        },
+        "id": "0-20000-0-01002"
+      },
+      {
+        "type": "Feature",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            15.5353,
+            77.0002
+          ]
+        },
+        "properties": {
+          "name": "platform-0-20000-0-01003",
+          "detail": "https://oscar.wmo.int/surface/rest/api/search/station?wigosId=0-20000-0-01003",
+          "parameter-name": [
+            "air_temperature:2.0:maximum:PT12H",
+            "air_temperature:2.0:maximum:PT1H",
+            "air_temperature:2.0:mean:PT24H",
+            "air_temperature:2.0:minimum:PT12H",
+            "air_temperature:2.0:minimum:PT1H",
+            "air_temperature:2.0:point:PT0S",
+            "cloud_area_fraction:0.0:point:PT0S",
+            "duration_of_sunshine:0.0:sum:PT1H",
+            "low_type_cloud_area_fraction:0.0:point:PT0S",
+            "precipitation_amount:0.0:sum:PT12H",
+            "precipitation_amount:0.0:sum:PT1H",
+            "precipitation_amount:0.0:sum:PT24H",
+            "precipitation_amount:0.0:sum:PT6H",
+            "relative_humidity:2.0:mean:PT24H",
+            "relative_humidity:2.0:point:PT0S",
+            "surface_air_pressure:2.0:point:PT0S",
+            "surface_snow_thickness:0.0:point:PT0S",
+            "tendency_of_surface_air_pressure:2.0:point:PT3H",
+            "wind_from_direction:10.0:maximum:PT1H",
+            "wind_from_direction:10.0:point:PT0S",
+            "wind_speed:10.0:maximum:PT1H",
+            "wind_speed:10.0:point:PT0S",
+            "wind_speed_of_gust:10.0:maximum:PT1H"
+          ]
+        },
+        "id": "0-20000-0-01003"
+      }
+    ]
+}   

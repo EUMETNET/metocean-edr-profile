@@ -1,0 +1,19 @@
+type: object
+required:
+  - conformsTo
+properties:
+  conformsTo:
+    type: array
+    items:
+      type: string
+    examples:
+      -  - https://www.opengis.net/spec/ogcapi-common-1/1.0/conf/core
+         - https://www.opengis.net/spec/ogcapi-common-2/1.0/conf/collections
+         - https://www.opengis.net/spec/ogcapi-edr-1/1.2/conf/core
+         - https://www.opengis.net/spec/ogcapi-edr-1/1.2/conf/collections
+         - https://www.opengis.net/spec/ogcapi-edr-1/1.2/conf/json
+         - https://www.opengis.net/spec/ogcapi-edr-1/1.2/conf/edr-geojson
+         - https://www.opengis.net/spec/ogcapi-edr-1/1.2/conf/covjson
+         - https://www.opengis.net/spec/ogcapi-edr-1/1.2/conf/queries
+         - http://rodeo-project.eu/spec/rodeo-edr-profile/1/req/core
+         - http://rodeo-project.eu/spec/rodeo-edr-profile/1/req/insitu-observations

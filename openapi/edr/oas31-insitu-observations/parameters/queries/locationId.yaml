@@ -1,0 +1,10 @@
+name: locationId
+in: path
+required: true
+description: Comma delimited list of location identifiers (i.e. EGLL or EGLL,YBBN,CYOW or London,Brisbane)
+schema:
+    type: string
+examples:
+    insitu-station:
+        summary: Station identifier
+        value: 0-20000-0-01001

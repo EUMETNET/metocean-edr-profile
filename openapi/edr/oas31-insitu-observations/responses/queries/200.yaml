@@ -1,0 +1,8 @@
+description: Data ranges required to construct valid queries for the choosen data collection
+content:
+  application/vnd.cov+json:
+    schema:
+      $ref: ../../../../coveragejson/coveragejson-insitu-obs-2020-12.json
+    examples:
+      insitu-observation-single-location:
+        $ref: "../../examples/insitu-observations-single-location.json"

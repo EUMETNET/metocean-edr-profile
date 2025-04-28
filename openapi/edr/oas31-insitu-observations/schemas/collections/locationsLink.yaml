@@ -1,0 +1,19 @@
+allOf:
+  - $ref: ../core/link.yaml
+properties:
+  href:
+    type: string
+  variables:
+    $ref: locationsDataQuery.yaml
+  examples:
+    - - href: https://example.com/collections/insitu_observations/locations
+        hreflang: "en"
+        rel: "data"
+        variables:
+          query_type: "locations"
+          output_formats:
+            - - CoverageJSON
+          default_output_format: CoverageJSON
+          crs_details:
+            - crs: OGC:CRS84
+              wkt: GEOGCS["GCS_WGS_84_CRS84",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]

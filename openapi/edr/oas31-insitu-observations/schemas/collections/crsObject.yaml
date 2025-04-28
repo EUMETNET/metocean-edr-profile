@@ -1,0 +1,15 @@
+type: object
+required:
+  - crs
+  - wkt
+properties:
+  crs:
+    description: name of the coordinate reference system, used as the value in the crs query parameter to define the required output CRS
+    type: string
+    examples: 
+      - OGC:CRS84
+  wkt:
+    description: Well Known text description of the coordinate reference system
+    type: string
+    examples: 
+      - GEOGCS["GCS_WGS_84_CRS84",DATUM["D_WGS_1984",SPHEROID["WGS_1984",6378137.0,298.257223563]],PRIMEM["Greenwich",0.0],UNIT["Degree",0.0174532925199433]]

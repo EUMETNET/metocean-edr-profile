@@ -1,0 +1,28 @@
+type: object
+title: unit name
+description: definition of data units
+required:
+  - symbol
+properties:
+  label:
+    additionalProperties:
+      type: string
+  symbol:
+    title: Describe unit symbol
+    type: object
+    description: Information about the symbol used to describe the units
+    required:
+      - value
+      - type
+    properties:
+      value:
+        description: representation of the units symbol
+        type: string
+      type:
+        description: uri to detailed desxcription of the units
+        type: string
+    examples:
+      - value: °C
+        type: https://qudt.org/vocab/unit/DEG_C
+  id:
+    type: string
