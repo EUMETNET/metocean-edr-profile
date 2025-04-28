@@ -64,3 +64,8 @@ Metadata about the radius data query in a collection.
 
 include::../requirements/core/REQ_collection_radius_data_query.adoc[]
 
+=== Locations query response format
+
+Structure of the response document for a /locations query.
+
+include::../requirements/core/REQ_locations_query_response_format.adoc[]

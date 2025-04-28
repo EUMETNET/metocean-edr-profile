@@ -41,3 +41,7 @@ include::./core/ATS_test_collection_parameter_names.adoc[]
 ==== Collection radius data query
 
 include::./core/ATS_test_collection_radius_data_query.adoc[]
+
+==== Locations query response format
+
+include::./core/ATS_test_locations_query_response_format.adoc[]
