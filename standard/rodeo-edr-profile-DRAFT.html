@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">The provision of Open Access to Public meteorological Data and Development of Shared federated Data Infrastructure for the Development of information Products and Services</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-04-25</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-04-28</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 0.1.0</p></td>
@@ -513,6 +513,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_collection_vertical_extent">7.9. Collection vertical extent</a></li>
 <li><a href="#_collection_parameter_names">7.10. Collection parameter names</a></li>
 <li><a href="#_collection_radius_data_query">7.11. Collection radius data query</a></li>
+<li><a href="#_locations_query_response_format">7.12. Locations query response format</a></li>
 </ul>
 </li>
 <li><a href="#_insitu_observations">8. Insitu observations</a>
@@ -539,6 +540,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_coveragejson_referencing_2">A.1.7. CoverageJSON referencing</a></li>
 <li><a href="#_collection_parameter_names_3">A.1.8. Collection parameter names</a></li>
 <li><a href="#_collection_radius_data_query_2">A.1.9. Collection radius data query</a></li>
+<li><a href="#_locations_query_response_format_2">A.1.10. Locations query response format</a></li>
 </ul>
 </li>
 <li><a href="#_conformance_class_insitu_observations">A.2. Conformance Class: Insitu observations</a>
@@ -1367,6 +1369,62 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_locations_query_response_format"><a class="anchor" href="#_locations_query_response_format"></a>7.12. Locations query response format</h3>
+<div class="paragraph">
+<p>Structure of the response document for a /locations query.</p>
+</div>
+<table id="req_core_locations_query_response_format" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 9</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p><strong>/req/core/locations_query_response_format</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>The response document for a <code>/locations</code> query to a <code>collection</code> or an <code>instance</code> of a <code>collection</code> SHALL be a GeoJSON document with a FeatureCollection object.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>Each Feature object in the FeatureCollection SHALL have the following properties: <code>id</code> of type string, <code>properties.name</code> of type string.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>If the data for a location do not provide all parameters listed in the <code>collection</code>, it SHALL include <code>properties.parameter-name</code> which SHALL be a list of strings. This list SHALL be a subset of the list of keys from the <code>parameter_names</code> object in the collection.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">D</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>If there are links with more information about the location they SHALL be included in <code>properties.links</code> as a list of <code>link</code> objects. The <code>link</code> object SHALL have identical structure as link objects defined by OGC API - Common Part 1: Core.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>A more detailed description of the location MAY also be provided via <code>properties.description</code>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">F</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>All strings SHALL be in english.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1407,7 +1465,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 9</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 10</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_data_queries</strong></p>
 </div></div></td>
@@ -1433,7 +1491,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 10</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 11</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_parameter_names</strong></p>
 </div></div></td>
@@ -1471,7 +1529,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 11</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 12</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_custom_dimensions</strong></p>
 </div></div></td>
@@ -1521,7 +1579,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 12</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 13</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/data_query_response_format</strong></p>
 </div></div></td>
@@ -1547,7 +1605,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 13</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 14</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/coveragejson_parameters</strong></p>
 </div></div></td>
@@ -1585,7 +1643,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 14</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 15</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/coveragejson_referencing</strong></p>
 </div></div></td>
@@ -2165,6 +2223,61 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_locations_query_response_format_2"><a class="anchor" href="#_locations_query_response_format_2"></a>A.1.10. Locations query response format</h4>
+<div id="ats_core_locations_query_response_format" class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">label</dt>
+<dd>
+<p>/conf/core/locations_query_response_format</p>
+</dd>
+<dt class="hdlist1">subject</dt>
+<dd>
+<p>/req/core/locations_query_response_format</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Validate that a RODEO EDR Profile API has a correctly formated response to a locations query.</p>
+</dd>
+</dl>
+</div>
+<div class="exampleblock component">
+<div class="content">
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>For every collection and instance of a collection, check if <code>locations</code> exists as a key in the <code>data_queries</code> object. If so, get the <code>href</code> value from the link object with <code>"rel":"self"</code> and append <code>/locations</code> to the value and issue an HTTP GET request.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Check that the value of the returned HTTP status header is 200.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Check that the response http header <code>Content-Type</code> has value <code>application/geo+json</code>.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>In the response document, check that it has the property <code>"type": "FeatureCollection"</code>. For each object in the <code>features</code> array, check that the properties <code>id</code> and <code>properties.name</code> are present.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_conformance_class_insitu_observations"><a class="anchor" href="#_conformance_class_insitu_observations"></a>A.2. Conformance Class: Insitu observations</h3>
@@ -2595,7 +2708,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-04-25 08:34:44 UTC
+Last updated 2025-04-28 08:37:38 UTC
 </div>
 </div>
 </body>
