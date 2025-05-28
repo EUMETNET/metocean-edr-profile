@@ -1,0 +1,7 @@
+[[req_core_error_handling]]
+[width="90%",cols="2,6a"]
+|===
+^|*Requirement {counter:req-id}* |*/req/core/error_handling*
+^|A | A query for data inside the extent of a collection that results in no data SHALL have a HTTP status code of `204`, and return no content.
+^|B | Any http request that results in a response with a 4xx HTTP status code SHALL give a response which complies with `RFC 9457 Problem Details for HTTP API`.
+|===
