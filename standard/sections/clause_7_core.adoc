@@ -69,3 +69,9 @@ include::../requirements/core/REQ_collection_radius_data_query.adoc[]
 Structure of the response document for a /locations query.
 
 include::../requirements/core/REQ_locations_query_response_format.adoc[]
+
+=== Error handling
+
+HTTP status codes and response documents for responding to errors.
+
+include::../requirements/core/REQ_error_handling.adoc[]

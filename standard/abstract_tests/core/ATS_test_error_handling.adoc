@@ -1,0 +1,29 @@
+[[ats_core_error_handling]]
+====
+[%metadata]
+label:: /conf/core/error_handling
+subject:: /req/core/error_handling
+test-purpose:: Validate that a RODEO EDR Profile API handles errors correctly.
+
+
+[.component,class=test method]
+=====
+
+[.component,class=step]
+--
+Issue an HTTP GET request to an non-existent path `/collections/nonexistentcollection`.
+--
+
+[.component,class=step]
+--
+Check that the value of the returned HTTP status code is `404` and the HTTP response header `Content-Type` is `application/problem+json`.
+--
+
+[.component,class=step]
+--
+Check that the returned JSON document includes the properties `type` and `title`. Check that `title` is a string and that `type` is either an URI or the value `about:blank`.
+--
+
+=====
+
+====
