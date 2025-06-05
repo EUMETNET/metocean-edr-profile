@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">The provision of Open Access to Public meteorological Data and Development of Shared federated Data Infrastructure for the Development of information Products and Services</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-04-28</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-06-05</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 0.1.0</p></td>
@@ -514,6 +514,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_collection_parameter_names">7.10. Collection parameter names</a></li>
 <li><a href="#_collection_radius_data_query">7.11. Collection radius data query</a></li>
 <li><a href="#_locations_query_response_format">7.12. Locations query response format</a></li>
+<li><a href="#_error_handling">7.13. Error handling</a></li>
 </ul>
 </li>
 <li><a href="#_insitu_observations">8. Insitu observations</a>
@@ -541,6 +542,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_collection_parameter_names_3">A.1.8. Collection parameter names</a></li>
 <li><a href="#_collection_radius_data_query_2">A.1.9. Collection radius data query</a></li>
 <li><a href="#_locations_query_response_format_2">A.1.10. Locations query response format</a></li>
+<li><a href="#_error_handling_2">A.1.11. Error handling</a></li>
 </ul>
 </li>
 <li><a href="#_conformance_class_insitu_observations">A.2. Conformance Class: Insitu observations</a>
@@ -1425,6 +1427,44 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </tbody>
 </table>
 </div>
+<div class="sect2">
+<h3 id="_error_handling"><a class="anchor" href="#_error_handling"></a>7.13. Error handling</h3>
+<div class="paragraph">
+<p>HTTP status codes and response documents for responding to errors.</p>
+</div>
+<table id="req_core_error_handling" class="tableblock frame-all grid-all" style="width: 90%;">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 10</strong></p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p><strong>/req/core/error_handling</strong></p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">A</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>A query for data inside the extent of a collection that results in no data SHALL have a HTTP status code of <code>204</code>, and return no content.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">B</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>A data query that is partially within the extent SHALL respond as if it is within the extent, but SHOULD only respond with data for the part of the geographical area in the query that is inside the extent.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">C</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>Any http request that results in a response with a 4xx HTTP status code SHALL give a response which complies with <a href="https://www.rfc-editor.org/rfc/rfc9457.html">RFC 9457 Problem Details for HTTP API</a>.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -1465,7 +1505,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 10</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 11</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_data_queries</strong></p>
 </div></div></td>
@@ -1491,7 +1531,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 11</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 12</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_parameter_names</strong></p>
 </div></div></td>
@@ -1529,7 +1569,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 12</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 13</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/collection_custom_dimensions</strong></p>
 </div></div></td>
@@ -1579,7 +1619,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 13</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 14</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/data_query_response_format</strong></p>
 </div></div></td>
@@ -1605,7 +1645,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 14</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 15</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/coveragejson_parameters</strong></p>
 </div></div></td>
@@ -1643,7 +1683,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 15</strong></p></td>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong>Requirement 16</strong></p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p><strong>/req/insitu-observations/coveragejson_referencing</strong></p>
 </div></div></td>
@@ -2278,6 +2318,54 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 </div>
 </div>
+<div class="sect3">
+<h4 id="_error_handling_2"><a class="anchor" href="#_error_handling_2"></a>A.1.11. Error handling</h4>
+<div id="ats_core_error_handling" class="exampleblock">
+<div class="content">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">label</dt>
+<dd>
+<p>/conf/core/error_handling</p>
+</dd>
+<dt class="hdlist1">subject</dt>
+<dd>
+<p>/req/core/error_handling</p>
+</dd>
+<dt class="hdlist1">test-purpose</dt>
+<dd>
+<p>Validate that a RODEO EDR Profile API handles errors correctly.</p>
+</dd>
+</dl>
+</div>
+<div class="exampleblock component">
+<div class="content">
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Issue an HTTP GET request to an non-existent path <code>/collections/nonexistentcollection</code>.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Check that the value of the returned HTTP status code is <code>404</code> and the HTTP response header <code>Content-Type</code> is <code>application/problem+json</code>.</p>
+</div>
+</div>
+</div>
+<div class="openblock component">
+<div class="content">
+<div class="paragraph">
+<p>Check that the returned JSON document includes the properties <code>type</code> and <code>title</code>. Check that <code>title</code> is a string and that <code>type</code> is either an URI or the value <code>about:blank</code>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_conformance_class_insitu_observations"><a class="anchor" href="#_conformance_class_insitu_observations"></a>A.2. Conformance Class: Insitu observations</h3>
@@ -2708,7 +2796,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-04-28 08:37:38 UTC
+Last updated 2025-06-05 12:46:27 UTC
 </div>
 </div>
 </body>
