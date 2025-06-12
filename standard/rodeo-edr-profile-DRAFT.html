@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">The provision of Open Access to Public meteorological Data and Development of Shared federated Data Infrastructure for the Development of information Products and Services</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-06-05</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-06-12</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 0.1.0</p></td>
@@ -1577,31 +1577,31 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">A</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>A collection can contain multiple parameters who fit under a standard name as defined by the CF metadata conventions. A collection SHALL have an object in <code>extent.custom</code> with <code>id</code> of value <code>standard_names</code>.</p>
+<p>A collection can contain multiple parameters who fit under a standard name as defined by the CF metadata conventions. A collection SHALL have an object in <code>extent.custom</code> with <code>id</code> of value <code>standard_name</code>.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">B</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>Custom dimension object <code>standard_names</code> SHALL specify a list of CF-conventions standard names in <code>values</code>.</p>
+<p>Custom dimension object <code>standard_name</code> SHALL specify a list of CF-conventions standard names in <code>values</code>.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">C</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>Custom dimension <code>standard_names</code> SHALL specify <code>reference</code> with value <code><a href="https://vocab.nerc.ac.uk/standard_name/" class="bare">https://vocab.nerc.ac.uk/standard_name/</a></code>.</p>
+<p>Custom dimension <code>standard_name</code> SHALL specify <code>reference</code> with value <code><a href="https://vocab.nerc.ac.uk/standard_name/" class="bare">https://vocab.nerc.ac.uk/standard_name/</a></code>.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">D</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>A collection can contain parameters that are identical except for having performed measurements on different heights. A collection SHALL have an object in <code>extent.custom</code> with <code>id</code> of value <code>levels</code>.</p>
+<p>A collection can contain parameters that are identical except for having performed measurements on different heights. A collection SHALL have an object in <code>extent.custom</code> with <code>id</code> of value <code>level</code>.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">E</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>Custom dimension <code>levels</code> SHALL specify <code>reference</code> with value <code>Height of measurement above ground level in meters</code>.</p>
+<p>Custom dimension <code>level</code> SHALL specify <code>reference</code> with value <code>Height of measurement above ground level in meters</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -2538,14 +2538,14 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="openblock component">
 <div class="content">
 <div class="paragraph">
-<p>Check that the <code>extent.custom</code> array has an object with property <code>id</code> set to <code>standard_names</code> and property <code>reference</code> set to <code><a href="https://vocab.nerc.ac.uk/standard_name/" class="bare">https://vocab.nerc.ac.uk/standard_name/</a></code>.</p>
+<p>Check that the <code>extent.custom</code> array has an object with property <code>id</code> set to <code>standard_name</code> and property <code>reference</code> set to <code><a href="https://vocab.nerc.ac.uk/standard_name/" class="bare">https://vocab.nerc.ac.uk/standard_name/</a></code>.</p>
 </div>
 </div>
 </div>
 <div class="openblock component">
 <div class="content">
 <div class="paragraph">
-<p>Check that the <code>extent.custom</code> array has an object with property <code>id</code> set to <code>levels</code> and property <code>reference</code> set to <code>Height of measurement above ground level in meters</code>.</p>
+<p>Check that the <code>extent.custom</code> array has an object with property <code>id</code> set to <code>level</code> and property <code>reference</code> set to <code>Height of measurement above ground level in meters</code>.</p>
 </div>
 </div>
 </div>
@@ -2796,7 +2796,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-06-05 12:46:27 UTC
+Last updated 2025-06-12 09:10:26 UTC
 </div>
 </div>
 </body>
