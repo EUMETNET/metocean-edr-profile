@@ -20,12 +20,12 @@ Check that the value of the returned HTTP status header is 200.
 
 [.component,class=step]
 --
-Check that the `extent.custom` array has an object with property `id` set to `standard_names` and property `reference` set to `https://vocab.nerc.ac.uk/standard_name/`. 
+Check that the `extent.custom` array has an object with property `id` set to `standard_name` and property `reference` set to `https://vocab.nerc.ac.uk/standard_name/`. 
 --
 
 [.component,class=step]
 --
-Check that the `extent.custom` array has an object with property `id` set to `levels` and property `reference` set to `Height of measurement above ground level in meters`.
+Check that the `extent.custom` array has an object with property `id` set to `level` and property `reference` set to `Height of measurement above ground level in meters`.
 --
 
 =====
