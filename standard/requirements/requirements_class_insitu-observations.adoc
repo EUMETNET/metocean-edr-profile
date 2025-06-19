@@ -1,7 +1,7 @@
 [[rc_insitu-observations]]
 [cols="1,4",width="90%"]
 |===
-|URI |https://rodeo-project.eu/spec/rodeo-edr-profile/1/req/insitu-observations
+|URI |https://eumetnet.github.io/spec/metocean-edr-profile/1/req/insitu-observations
 |Target type|Web API
 |Dependency |<<rc_core,Core>>
 |===

@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/core/locations_query_response_format
 subject:: /req/core/locations_query_response_format
-test-purpose:: Validate that a RODEO EDR Profile API has a correctly formated response to a locations query.
+test-purpose:: Validate that a MetOcean EDR Profile API has a correctly formated response to a locations query.
 
 [.component,class=test method]
 =====

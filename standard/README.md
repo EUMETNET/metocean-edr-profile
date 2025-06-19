@@ -1,4 +1,4 @@
-# rodeo-edr-profile
+# metocean-edr-profile
 
 ## Overview
 
@@ -20,11 +20,11 @@ npm install asciidoctor asciidoctor-pdf asciidoc-link-check
 
 ```bash
 # create HTML (single page)
-asciidoctor --trace -o rodeo-edr-profile.html index.adoc
+asciidoctor --trace -o metocean-edr-profile.html index.adoc
 # create PDF
-asciidoctor --trace -r asciidoctor-pdf --trace -b pdf -o rodeo-edr-profile.pdf index.adoc
+asciidoctor --trace -r asciidoctor-pdf --trace -b pdf -o metocean-edr-profile.pdf index.adoc
 # create Word document
-asciidoctor --trace --backend docbook --out-file - index.adoc | pandoc --from docbook --to docx --output rodeo-edr-profile.docx
+asciidoctor --trace --backend docbook --out-file - index.adoc | pandoc --from docbook --to docx --output metocean-edr-profile.docx
 ```
 
 # check links

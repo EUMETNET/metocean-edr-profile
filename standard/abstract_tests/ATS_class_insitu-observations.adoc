@@ -1,7 +1,7 @@
 [[ats_insitu-observations]]
 ====
 [%metadata]
-label:: https://rodeo-project.eu/spec/rodeo-edr-profile/1/conf/insitu-observations
+label:: https://eumetnet.github.io/spec/metocean-edr-profile/1/conf/insitu-observations
 subject:: Requirements Class "Insitu observations"
 classification:: Target Type:Web API
 ====

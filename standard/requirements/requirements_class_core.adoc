@@ -1,7 +1,7 @@
 [[rc_core]]
 [cols="1,4",width="90%"]
 |===
-|URI |https://rodeo-project.eu/spec/rodeo-edr-profile/1/req/core
+|URI |https://eumetnet.github.io/spec/metocean-edr-profile/1/req/core
 |Target type|Web API
 |Dependency |OGC API - Environmental Data Retrieval Standard - Part 1: Core (2023) footnote:[https://docs.ogc.org/is/19-086r6/19-086r6.html]
 |Pre-conditions |The API conforms to OGC API - Environmental Data Retrieval - Part 1: Core, Requirements Class: Core and Requirements Class: Collections

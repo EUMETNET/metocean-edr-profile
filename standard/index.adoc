@@ -1,4 +1,4 @@
-:title: RODEO EDR Profile
+:title: MetOcean EDR Profile
 :titletext: {title}
 :version: 0.1.0
 :date: {docdate}

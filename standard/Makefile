@@ -1,4 +1,4 @@
-FILE_BASENAME=rodeo-edr-profile
+FILE_BASENAME=metocean-edr-profile
 
 html:
 	asciidoctor --verbose --trace -o ${FILE_BASENAME}.html index.adoc

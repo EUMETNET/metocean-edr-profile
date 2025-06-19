@@ -1,7 +1,7 @@
 [[ats_core]]
 ====
 [%metadata]
-label:: https://rodeo-project.eu/spec/rodeo-edr-profile/1/conf/core
+label:: https://eumetnet.github.io/spec/metocean-edr-profile/1/conf/core
 subject:: Requirements Class "core"
 classification:: Target Type:Web API
 ====

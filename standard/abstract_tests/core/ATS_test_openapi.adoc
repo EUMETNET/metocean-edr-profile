@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/core/openapi
 subject:: /req/core/openapi
-test-purpose:: Validate that a RODEO EDR Profile provides an API definition using an OpenAPI document
+test-purpose:: Validate that a MetOcean EDR Profile provides an API definition using an OpenAPI document
 
 [.component,class=test method]
 =====
