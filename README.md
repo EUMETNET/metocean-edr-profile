@@ -1,6 +1,6 @@
-[![Build Status](https://github.com/EURODEO/rodeo-edr-profile/workflows/build%20specification/badge.svg)](https://github.com/EURODEO/rodeo-edr-profile/actions/workflows/main.yml)
+[![Build Status](https://github.com/EUMETNET/metocean-edr-profile/workflows/build%20specification/badge.svg)](https://github.com/EUMETNET/metocean-edr-profile/actions/workflows/main.yml)
 
-# RODEO EDR Profile
+# MetOcean EDR Profile
 
 ## Purpose
 

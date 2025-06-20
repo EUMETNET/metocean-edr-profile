@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/core/collection_spatial_extent
 subject:: /req/core/collection_spatial_extent
-test-purpose:: Validate that a RODEO EDR Profile API provides spatial extent in the correct crs.
+test-purpose:: Validate that a MetOcean EDR Profile API provides spatial extent in the correct crs.
 
 [.component,class=test method]
 =====

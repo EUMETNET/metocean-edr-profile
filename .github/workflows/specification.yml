@@ -8,10 +8,10 @@ on:
     - 'standard/**'
 
 env:
-  SPEC_FILE_BASENAME: rodeo-edr-profile-DRAFT
+  SPEC_FILE_BASENAME: metocean-edr-profile-DRAFT
 
 jobs:
-  build-rodeo-edr-profile:
+  build-metocean-edr-profile:
     name: Generate documentation
     runs-on: ubuntu-latest
     steps:
@@ -24,12 +24,12 @@ jobs:
         uses: actions/checkout@master
       - name: build specification
         run: |
-          mkdir -p /tmp/rodeo-edr-profile/standard/images \
+          mkdir -p /tmp/metocean-edr-profile/standard/images \
           && cd standard \
-          && asciidoctor --trace -o /tmp/rodeo-edr-profile/standard/${SPEC_FILE_BASENAME}.html index.adoc \
-          && asciidoctor --trace --backend docbook --out-file - index.adoc | pandoc --from docbook --to docx --output /tmp/rodeo-edr-profile/standard/${SPEC_FILE_BASENAME}.docx \
-          && asciidoctor --trace -r asciidoctor-pdf --trace -b pdf -o /tmp/rodeo-edr-profile/standard/${SPEC_FILE_BASENAME}.pdf index.adoc \
-          && cp images/*.png /tmp/rodeo-edr-profile/standard/images \
+          && asciidoctor --trace -o /tmp/metocean-edr-profile/standard/${SPEC_FILE_BASENAME}.html index.adoc \
+          && asciidoctor --trace --backend docbook --out-file - index.adoc | pandoc --from docbook --to docx --output /tmp/metocean-edr-profile/standard/${SPEC_FILE_BASENAME}.docx \
+          && asciidoctor --trace -r asciidoctor-pdf --trace -b pdf -o /tmp/metocean-edr-profile/standard/${SPEC_FILE_BASENAME}.pdf index.adoc \
+          && cp images/*.png /tmp/metocean-edr-profile/standard/images \
           && cd ..
       - name: checkout gh-pages branch
         uses: actions/checkout@master
@@ -40,7 +40,7 @@ jobs:
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           rm -rf standard
-          mv -f /tmp/rodeo-edr-profile/* .
+          mv -f /tmp/metocean-edr-profile/* .
           git add .
-          git commit -am "update rodeo-edr-profile build"
+          git commit -am "update metocean-edr-profile build"
           git push

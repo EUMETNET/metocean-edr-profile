@@ -4,13 +4,13 @@ The Open Geospatial Consortium (OGC) Environmental Data Retrieval (EDR) API prov
 
 The flexibility of EDR allows for implementation in various environmental domains and communities of practice.
 
-This document defines an EDR profile in support of providing access to meteorological datasets in the RODEO project.  This includes, but is not limited to, conventions and constraints on identifiers, metadata parameters and encodings/formats and their related definitions and extensions.
+This document defines an EDR profile in support of providing access to meteorological datasets in the MetOcean community of practice.  This includes, but is not limited to, conventions and constraints on identifiers, metadata parameters and encodings/formats and their related definitions and extensions.
 
 [big]*ii.    Keywords*
 
 The following are keywords to be used by search engines and document catalogues.
 
-rodeo, eumetnet, ogc, api, edr, weather, meteorology, high value datasets
+metocean, ogc, api, edr, weather, meteorology, high value datasets
 
 [big]*iii.    Security Considerations*
 

@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/insitu-observations/data_query_response_format
 subject:: /req/insitu-observations/data_query_response_format
-test-purpose:: Validate that a RODEO EDR Insitu observations Profile API has correct response format for data queries.
+test-purpose:: Validate that a MetOcean EDR Insitu observations Profile API has correct response format for data queries.
 
 [.component,class=test method]
 =====

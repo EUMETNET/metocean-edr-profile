@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/insitu-observations/collection_data_queries
 subject:: /req/insitu-observations/collection_data_queries
-test-purpose:: Validate that a RODEO EDR Insitu observations Profile API has implemented the mandatory data queries.
+test-purpose:: Validate that a MetOcean EDR Insitu observations Profile API has implemented the mandatory data queries.
 
 [.component,class=test method]
 =====

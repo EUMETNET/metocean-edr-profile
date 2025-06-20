@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/core/coveragejson_referencing
 subject:: /req/core/coveragejson_referencing
-test-purpose:: Validate that a RODEO EDR Profile API CoverageJSON response document provides correct domain referencing values.
+test-purpose:: Validate that a MetOcean EDR Profile API CoverageJSON response document provides correct domain referencing values.
 
 [.component,class=test method]
 =====

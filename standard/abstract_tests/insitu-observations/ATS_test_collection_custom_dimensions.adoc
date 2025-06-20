@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/insitu-observations/collection_custom_dimensions
 subject:: /req/insitu-observations/collection_custom_dimensions
-test-purpose:: Validate that a RODEO EDR Insitu observations Profile API has required custom dimensions.
+test-purpose:: Validate that a MetOcean EDR Insitu observations Profile API has required custom dimensions.
 
 [.component,class=test method]
 =====

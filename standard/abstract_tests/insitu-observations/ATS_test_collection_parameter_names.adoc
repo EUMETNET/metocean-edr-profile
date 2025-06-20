@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/insitu-observations/collection_parameter_names
 subject:: /req/insitu-observations/collection_parameter_names
-test-purpose:: Validate that a RODEO EDR Insitu observations Profile API has the required properties for parameter_names
+test-purpose:: Validate that a MetOcean EDR Insitu observations Profile API has the required properties for parameter_names
 
 [.component,class=test method]
 =====

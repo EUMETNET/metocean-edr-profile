@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/core/error_handling
 subject:: /req/core/error_handling
-test-purpose:: Validate that a RODEO EDR Profile API handles errors correctly.
+test-purpose:: Validate that a MetOcean EDR Profile API handles errors correctly.
 
 
 [.component,class=test method]

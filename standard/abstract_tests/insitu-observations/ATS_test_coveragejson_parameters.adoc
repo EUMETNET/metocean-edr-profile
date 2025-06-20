@@ -3,7 +3,7 @@
 [%metadata]
 label:: /conf/insitu-observations/coveragejson_parameters
 subject:: /req/insitu-observations/coveragejson_parameters
-test-purpose:: Validate that a RODEO EDR Insitu observations Profile API has required metadata in coveragejson parameters.
+test-purpose:: Validate that a MetOcean EDR Insitu observations Profile API has required metadata in CoverageJSON parameters.
 [.component,class=test method]
 =====
 

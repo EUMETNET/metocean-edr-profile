@@ -230,8 +230,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_pressure",
-          "rodeo:level": 0
+          "metocean:standard_name": "air_pressure",
+          "metocean:level": 0
         },
         "air_pressure:1.5:mean:PT1H": {
           "type": "Parameter",
@@ -247,8 +247,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "air_pressure",
-          "rodeo:level": 1.5
+          "metocean:standard_name": "air_pressure",
+          "metocean:level": 1.5
         },
         "air_pressure:1.5:mean:PT1M": {
           "type": "Parameter",
@@ -264,8 +264,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "air_pressure",
-          "rodeo:level": 1.5
+          "metocean:standard_name": "air_pressure",
+          "metocean:level": 1.5
         },
         "air_pressure:2.0:point:PT0S": {
           "type": "Parameter",
@@ -281,8 +281,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_pressure",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_pressure",
+          "metocean:level": 2
         },
         "air_pressure_at_mean_sea_level:0.0:point:PT0S": {
           "type": "Parameter",
@@ -298,8 +298,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_pressure_at_mean_sea_level",
-          "rodeo:level": 0
+          "metocean:standard_name": "air_pressure_at_mean_sea_level",
+          "metocean:level": 0
         },
         "air_temperature:0.0:point:PT0S": {
           "type": "Parameter",
@@ -315,8 +315,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 0
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 0
         },
         "air_temperature:1.2:point:PT0S": {
           "type": "Parameter",
@@ -332,8 +332,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 1.2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 1.2
         },
         "air_temperature:10.1:point:PT0S": {
           "type": "Parameter",
@@ -349,8 +349,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 10.1
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 10.1
         },
         "air_temperature:14.4:point:PT0S": {
           "type": "Parameter",
@@ -366,8 +366,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 14.4
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 14.4
         },
         "air_temperature:2.0:maximum:PT10M": {
           "type": "Parameter",
@@ -383,8 +383,8 @@
             "method": "maximum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:maximum:PT12H": {
           "type": "Parameter",
@@ -400,8 +400,8 @@
             "method": "maximum",
             "period": "PT12H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:maximum:PT1H": {
           "type": "Parameter",
@@ -417,8 +417,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:maximum:PT24H": {
           "type": "Parameter",
@@ -434,8 +434,8 @@
             "method": "maximum",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:mean:PT1H": {
           "type": "Parameter",
@@ -451,8 +451,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -468,8 +468,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:mean:PT24H": {
           "type": "Parameter",
@@ -485,8 +485,8 @@
             "method": "mean",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:minimum:PT10M": {
           "type": "Parameter",
@@ -502,8 +502,8 @@
             "method": "minimum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:minimum:PT12H": {
           "type": "Parameter",
@@ -519,8 +519,8 @@
             "method": "minimum",
             "period": "PT12H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:minimum:PT1H": {
           "type": "Parameter",
@@ -536,8 +536,8 @@
             "method": "minimum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:minimum:PT24H": {
           "type": "Parameter",
@@ -553,8 +553,8 @@
             "method": "minimum",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:2.0:point:PT0S": {
           "type": "Parameter",
@@ -570,8 +570,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 2
         },
         "air_temperature:22.8:point:PT0S": {
           "type": "Parameter",
@@ -587,8 +587,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 22.8
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 22.8
         },
         "air_temperature:30.0:point:PT0S": {
           "type": "Parameter",
@@ -604,8 +604,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "air_temperature",
-          "rodeo:level": 30
+          "metocean:standard_name": "air_temperature",
+          "metocean:level": 30
         },
         "cloud_area_fraction:0.0:mean:PT24H": {
           "type": "Parameter",
@@ -621,8 +621,8 @@
             "method": "mean",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "cloud_area_fraction",
-          "rodeo:level": 0
+          "metocean:standard_name": "cloud_area_fraction",
+          "metocean:level": 0
         },
         "cloud_area_fraction:0.0:point:PT0S": {
           "type": "Parameter",
@@ -638,8 +638,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "cloud_area_fraction",
-          "rodeo:level": 0
+          "metocean:standard_name": "cloud_area_fraction",
+          "metocean:level": 0
         },
         "cloud_area_fraction:1.5:sum:PT1M": {
           "type": "Parameter",
@@ -655,8 +655,8 @@
             "method": "sum",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "cloud_area_fraction",
-          "rodeo:level": 1.5
+          "metocean:standard_name": "cloud_area_fraction",
+          "metocean:level": 1.5
         },
         "dew_point_temperature:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -672,8 +672,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "dew_point_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "dew_point_temperature",
+          "metocean:level": 2
         },
         "dew_point_temperature:2.0:point:PT0S": {
           "type": "Parameter",
@@ -689,8 +689,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "dew_point_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "dew_point_temperature",
+          "metocean:level": 2
         },
         "downwelling_longwave_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -706,8 +706,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "downwelling_longwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "downwelling_longwave_flux_in_air",
+          "metocean:level": 2
         },
         "duration_of_sunshine:0.0:sum:PT10M": {
           "type": "Parameter",
@@ -723,8 +723,8 @@
             "method": "sum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "duration_of_sunshine",
-          "rodeo:level": 0
+          "metocean:standard_name": "duration_of_sunshine",
+          "metocean:level": 0
         },
         "duration_of_sunshine:0.0:sum:PT1H": {
           "type": "Parameter",
@@ -740,8 +740,8 @@
             "method": "sum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "duration_of_sunshine",
-          "rodeo:level": 0
+          "metocean:standard_name": "duration_of_sunshine",
+          "metocean:level": 0
         },
         "duration_of_sunshine:0.0:sum:PT1M": {
           "type": "Parameter",
@@ -757,8 +757,8 @@
             "method": "sum",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "duration_of_sunshine",
-          "rodeo:level": 0
+          "metocean:standard_name": "duration_of_sunshine",
+          "metocean:level": 0
         },
         "duration_of_sunshine:2.0:sum:PT1H": {
           "type": "Parameter",
@@ -774,8 +774,8 @@
             "method": "sum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "duration_of_sunshine",
-          "rodeo:level": 2
+          "metocean:standard_name": "duration_of_sunshine",
+          "metocean:level": 2
         },
         "duration_of_sunshine:2.0:sum:PT1M": {
           "type": "Parameter",
@@ -791,8 +791,8 @@
             "method": "sum",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "duration_of_sunshine",
-          "rodeo:level": 2
+          "metocean:standard_name": "duration_of_sunshine",
+          "metocean:level": 2
         },
         "equivalent_reflectivity_factor:0.0:point:PT1M": {
           "type": "Parameter",
@@ -808,8 +808,8 @@
             "method": "point",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "equivalent_reflectivity_factor",
-          "rodeo:level": 0
+          "metocean:standard_name": "equivalent_reflectivity_factor",
+          "metocean:level": 0
         },
         "integral_wrt_time_of_surface_downwelling_longwave_flux_in_air:0.0:sum:PT1H": {
           "type": "Parameter",
@@ -825,8 +825,8 @@
             "method": "sum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "integral_wrt_time_of_surface_downwelling_longwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "integral_wrt_time_of_surface_downwelling_longwave_flux_in_air",
+          "metocean:level": 0
         },
         "integral_wrt_time_of_surface_downwelling_longwave_flux_in_air:0.0:sum:PT24H": {
           "type": "Parameter",
@@ -842,8 +842,8 @@
             "method": "sum",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "integral_wrt_time_of_surface_downwelling_longwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "integral_wrt_time_of_surface_downwelling_longwave_flux_in_air",
+          "metocean:level": 0
         },
         "low_type_cloud_area_fraction:0.0:point:PT0S": {
           "type": "Parameter",
@@ -859,8 +859,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "low_type_cloud_area_fraction",
-          "rodeo:level": 0
+          "metocean:standard_name": "low_type_cloud_area_fraction",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:maximum:PT1H": {
           "type": "Parameter",
@@ -876,8 +876,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:minimum:PT1H": {
           "type": "Parameter",
@@ -893,8 +893,8 @@
             "method": "minimum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:point:PT0S": {
           "type": "Parameter",
@@ -910,8 +910,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT0S": {
           "type": "Parameter",
@@ -927,8 +927,8 @@
             "method": "sum",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT10M": {
           "type": "Parameter",
@@ -944,8 +944,8 @@
             "method": "sum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT12H": {
           "type": "Parameter",
@@ -961,8 +961,8 @@
             "method": "sum",
             "period": "PT12H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT1H": {
           "type": "Parameter",
@@ -978,8 +978,8 @@
             "method": "sum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT1M": {
           "type": "Parameter",
@@ -995,8 +995,8 @@
             "method": "sum",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT24H": {
           "type": "Parameter",
@@ -1012,8 +1012,8 @@
             "method": "sum",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT3H": {
           "type": "Parameter",
@@ -1029,8 +1029,8 @@
             "method": "sum",
             "period": "PT3H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:0.0:sum:PT6H": {
           "type": "Parameter",
@@ -1046,8 +1046,8 @@
             "method": "sum",
             "period": "PT6H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 0
         },
         "precipitation_amount:1.5:sum:PT1H": {
           "type": "Parameter",
@@ -1063,8 +1063,8 @@
             "method": "sum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "precipitation_amount",
-          "rodeo:level": 1.5
+          "metocean:standard_name": "precipitation_amount",
+          "metocean:level": 1.5
         },
         "rainfall_rate:0.0:maximum:PT1M": {
           "type": "Parameter",
@@ -1080,8 +1080,8 @@
             "method": "maximum",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "rainfall_rate",
-          "rodeo:level": 0
+          "metocean:standard_name": "rainfall_rate",
+          "metocean:level": 0
         },
         "rainfall_rate:0.0:mean:PT1M": {
           "type": "Parameter",
@@ -1097,8 +1097,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "rainfall_rate",
-          "rodeo:level": 0
+          "metocean:standard_name": "rainfall_rate",
+          "metocean:level": 0
         },
         "rainfall_rate:1.5:maximum:PT1H": {
           "type": "Parameter",
@@ -1114,8 +1114,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "rainfall_rate",
-          "rodeo:level": 1.5
+          "metocean:standard_name": "rainfall_rate",
+          "metocean:level": 1.5
         },
         "rainfall_rate:1.5:mean:PT10M": {
           "type": "Parameter",
@@ -1131,8 +1131,8 @@
             "method": "mean",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "rainfall_rate",
-          "rodeo:level": 1.5
+          "metocean:standard_name": "rainfall_rate",
+          "metocean:level": 1.5
         },
         "relative_humidity:10.0:point:PT0S": {
           "type": "Parameter",
@@ -1148,8 +1148,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 10
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 10
         },
         "relative_humidity:2.0:maximum:PT10M": {
           "type": "Parameter",
@@ -1165,8 +1165,8 @@
             "method": "maximum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:maximum:PT1H": {
           "type": "Parameter",
@@ -1182,8 +1182,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:mean:PT1H": {
           "type": "Parameter",
@@ -1199,8 +1199,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -1216,8 +1216,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:mean:PT24H": {
           "type": "Parameter",
@@ -1233,8 +1233,8 @@
             "method": "mean",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:minimum:PT10M": {
           "type": "Parameter",
@@ -1250,8 +1250,8 @@
             "method": "minimum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:minimum:PT1H": {
           "type": "Parameter",
@@ -1267,8 +1267,8 @@
             "method": "minimum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "relative_humidity:2.0:point:PT0S": {
           "type": "Parameter",
@@ -1284,8 +1284,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "relative_humidity",
-          "rodeo:level": 2
+          "metocean:standard_name": "relative_humidity",
+          "metocean:level": 2
         },
         "sea_surface_swell_wave_from_direction:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1301,8 +1301,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_swell_wave_from_direction",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_swell_wave_from_direction",
+          "metocean:level": 0
         },
         "sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1318,8 +1318,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_swell_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+          "metocean:level": 0
         },
         "sea_surface_swell_wave_significant_height:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1335,8 +1335,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_swell_wave_significant_height",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_swell_wave_significant_height",
+          "metocean:level": 0
         },
         "sea_surface_temperature:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1352,8 +1352,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_temperature",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_temperature",
+          "metocean:level": 0
         },
         "sea_surface_wave_directional_spread:0.0:mean:PT0S": {
           "type": "Parameter",
@@ -1369,8 +1369,8 @@
             "method": "mean",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_directional_spread",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_directional_spread",
+          "metocean:level": 0
         },
         "sea_surface_wave_energy_at_variance_spectral_density_maximum:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1386,8 +1386,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_energy_at_variance_spectral_density_maximum",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_energy_at_variance_spectral_density_maximum",
+          "metocean:level": 0
         },
         "sea_surface_wave_from_direction:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1403,8 +1403,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_from_direction",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_from_direction",
+          "metocean:level": 0
         },
         "sea_surface_wave_from_direction_at_variance_spectral_density_maximum:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1420,8 +1420,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_from_direction_at_variance_spectral_density_maximum",
+          "metocean:level": 0
         },
         "sea_surface_wave_maximum_height:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1437,8 +1437,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_maximum_height",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_maximum_height",
+          "metocean:level": 0
         },
         "sea_surface_wave_maximum_period:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1454,8 +1454,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_maximum_period",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_maximum_period",
+          "metocean:level": 0
         },
         "sea_surface_wave_mean_period:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1471,8 +1471,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_mean_period",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_mean_period",
+          "metocean:level": 0
         },
         "sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1488,8 +1488,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_first_frequency_moment",
+          "metocean:level": 0
         },
         "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1505,8 +1505,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+          "metocean:level": 0
         },
         "sea_surface_wave_period_at_variance_spectral_density_maximum:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1522,8 +1522,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_period_at_variance_spectral_density_maximum",
+          "metocean:level": 0
         },
         "sea_surface_wave_period_of_highest_wave:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1539,8 +1539,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_period_of_highest_wave",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_period_of_highest_wave",
+          "metocean:level": 0
         },
         "sea_surface_wave_significant_height:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1556,8 +1556,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_significant_height",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_significant_height",
+          "metocean:level": 0
         },
         "sea_surface_wave_significant_period:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1573,8 +1573,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wave_significant_period",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wave_significant_period",
+          "metocean:level": 0
         },
         "sea_surface_wind_wave_from_direction:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1590,8 +1590,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wind_wave_from_direction",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wind_wave_from_direction",
+          "metocean:level": 0
         },
         "sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1607,8 +1607,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wind_wave_mean_period_from_variance_spectral_density_second_frequency_moment",
+          "metocean:level": 0
         },
         "sea_surface_wind_wave_significant_height:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1624,8 +1624,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_surface_wind_wave_significant_height",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_surface_wind_wave_significant_height",
+          "metocean:level": 0
         },
         "sea_water_electrical_conductivity:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1641,8 +1641,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_water_electrical_conductivity",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_water_electrical_conductivity",
+          "metocean:level": 0
         },
         "sea_water_salinity:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1658,8 +1658,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_water_salinity",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_water_salinity",
+          "metocean:level": 0
         },
         "sea_water_speed:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1675,8 +1675,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_water_speed",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_water_speed",
+          "metocean:level": 0
         },
         "sea_water_temperature:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1692,8 +1692,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "sea_water_temperature",
-          "rodeo:level": 0
+          "metocean:standard_name": "sea_water_temperature",
+          "metocean:level": 0
         },
         "soil_temperature:0.05:mean:PT1M": {
           "type": "Parameter",
@@ -1709,8 +1709,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "soil_temperature",
-          "rodeo:level": 0.05
+          "metocean:standard_name": "soil_temperature",
+          "metocean:level": 0.05
         },
         "soil_temperature:0.0:mean:PT1H": {
           "type": "Parameter",
@@ -1726,8 +1726,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "soil_temperature",
-          "rodeo:level": 0
+          "metocean:standard_name": "soil_temperature",
+          "metocean:level": 0
         },
         "soil_temperature:0.0:point:PT0S": {
           "type": "Parameter",
@@ -1743,8 +1743,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "soil_temperature",
-          "rodeo:level": 0
+          "metocean:standard_name": "soil_temperature",
+          "metocean:level": 0
         },
         "surface_air_pressure:2.0:maximum:PT1H": {
           "type": "Parameter",
@@ -1760,8 +1760,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_air_pressure",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_air_pressure",
+          "metocean:level": 2
         },
         "surface_air_pressure:2.0:minimum:PT1H": {
           "type": "Parameter",
@@ -1777,8 +1777,8 @@
             "method": "minimum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_air_pressure",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_air_pressure",
+          "metocean:level": 2
         },
         "surface_air_pressure:2.0:point:PT0S": {
           "type": "Parameter",
@@ -1794,8 +1794,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "surface_air_pressure",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_air_pressure",
+          "metocean:level": 2
         },
         "surface_diffuse_downwelling_shortwave_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -1811,8 +1811,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_diffuse_downwelling_shortwave_flux_in_air",
+          "metocean:level": 2
         },
         "surface_direct_downwelling_shortwave_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -1828,8 +1828,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_direct_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_direct_downwelling_shortwave_flux_in_air",
+          "metocean:level": 2
         },
         "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1H": {
           "type": "Parameter",
@@ -1845,8 +1845,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_downwelling_longwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_downwelling_longwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_downwelling_longwave_flux_in_air:0.0:mean:PT1M": {
           "type": "Parameter",
@@ -1862,8 +1862,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_downwelling_longwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_downwelling_longwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_downwelling_longwave_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -1879,8 +1879,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_downwelling_longwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_downwelling_longwave_flux_in_air",
+          "metocean:level": 2
         },
         "surface_downwelling_photosynthetic_photon_flux_in_air:2.0:mean:PT1H": {
           "type": "Parameter",
@@ -1896,8 +1896,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_downwelling_photosynthetic_photon_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_downwelling_photosynthetic_photon_flux_in_air",
+          "metocean:level": 2
         },
         "surface_downwelling_photosynthetic_photon_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -1913,8 +1913,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_downwelling_photosynthetic_photon_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_downwelling_photosynthetic_photon_flux_in_air",
+          "metocean:level": 2
         },
         "surface_downwelling_photosynthetic_radiative_flux_in_air:0.0:mean:PT1H": {
           "type": "Parameter",
@@ -1930,8 +1930,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_downwelling_photosynthetic_radiative_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_downwelling_photosynthetic_radiative_flux_in_air",
+          "metocean:level": 0
         },
         "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT10M": {
           "type": "Parameter",
@@ -1947,8 +1947,8 @@
             "method": "mean",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "surface_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_downwelling_shortwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1H": {
           "type": "Parameter",
@@ -1964,8 +1964,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_downwelling_shortwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_downwelling_shortwave_flux_in_air:0.0:mean:PT1M": {
           "type": "Parameter",
@@ -1981,8 +1981,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_downwelling_shortwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_downwelling_shortwave_flux_in_air:2.0:mean:PT1H": {
           "type": "Parameter",
@@ -1998,8 +1998,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_downwelling_shortwave_flux_in_air",
+          "metocean:level": 2
         },
         "surface_downwelling_shortwave_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -2015,8 +2015,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_downwelling_shortwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_downwelling_shortwave_flux_in_air",
+          "metocean:level": 2
         },
         "surface_snow_thickness:0.0:point:PT0S": {
           "type": "Parameter",
@@ -2032,8 +2032,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "surface_snow_thickness",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_snow_thickness",
+          "metocean:level": 0
         },
         "surface_snow_thickness:0.0:point:PT1M": {
           "type": "Parameter",
@@ -2049,8 +2049,8 @@
             "method": "point",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_snow_thickness",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_snow_thickness",
+          "metocean:level": 0
         },
         "surface_temperature:2.0:point:PT0S": {
           "type": "Parameter",
@@ -2066,8 +2066,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "surface_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_temperature",
+          "metocean:level": 2
         },
         "surface_upwelling_longwave_flux_in_air:0.0:mean:PT1H": {
           "type": "Parameter",
@@ -2083,8 +2083,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_upwelling_longwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_upwelling_longwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_upwelling_longwave_flux_in_air:0.0:mean:PT1M": {
           "type": "Parameter",
@@ -2100,8 +2100,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_upwelling_longwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_upwelling_longwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_upwelling_shortwave_flux_in_air:0.0:mean:PT1H": {
           "type": "Parameter",
@@ -2117,8 +2117,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "surface_upwelling_shortwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_upwelling_shortwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_upwelling_shortwave_flux_in_air:0.0:mean:PT1M": {
           "type": "Parameter",
@@ -2134,8 +2134,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_upwelling_shortwave_flux_in_air",
-          "rodeo:level": 0
+          "metocean:standard_name": "surface_upwelling_shortwave_flux_in_air",
+          "metocean:level": 0
         },
         "surface_upwelling_shortwave_flux_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -2151,8 +2151,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "surface_upwelling_shortwave_flux_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "surface_upwelling_shortwave_flux_in_air",
+          "metocean:level": 2
         },
         "tendency_of_surface_air_pressure:2.0:point:PT3H": {
           "type": "Parameter",
@@ -2168,8 +2168,8 @@
             "method": "point",
             "period": "PT3H"
           },
-          "rodeo:standard_name": "tendency_of_surface_air_pressure",
-          "rodeo:level": 2
+          "metocean:standard_name": "tendency_of_surface_air_pressure",
+          "metocean:level": 2
         },
         "thickness_of_snowfall_amount:0.0:point:PT24H": {
           "type": "Parameter",
@@ -2185,8 +2185,8 @@
             "method": "point",
             "period": "PT24H"
           },
-          "rodeo:standard_name": "thickness_of_snowfall_amount",
-          "rodeo:level": 0
+          "metocean:standard_name": "thickness_of_snowfall_amount",
+          "metocean:level": 0
         },
         "ultraviolet_index:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -2202,8 +2202,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "ultraviolet_index",
-          "rodeo:level": 2
+          "metocean:standard_name": "ultraviolet_index",
+          "metocean:level": 2
         },
         "virtual_temperature:2.0:maximum:PT1H": {
           "type": "Parameter",
@@ -2219,8 +2219,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "virtual_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "virtual_temperature",
+          "metocean:level": 2
         },
         "virtual_temperature:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -2236,8 +2236,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "virtual_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "virtual_temperature",
+          "metocean:level": 2
         },
         "virtual_temperature:2.0:minimum:PT1H": {
           "type": "Parameter",
@@ -2253,8 +2253,8 @@
             "method": "minimum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "virtual_temperature",
-          "rodeo:level": 2
+          "metocean:standard_name": "virtual_temperature",
+          "metocean:level": 2
         },
         "visibility_in_air:2.0:mean:PT1M": {
           "type": "Parameter",
@@ -2270,8 +2270,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "visibility_in_air",
-          "rodeo:level": 2
+          "metocean:standard_name": "visibility_in_air",
+          "metocean:level": 2
         },
         "wind_from_direction:10.0:maximum:PT1H": {
           "type": "Parameter",
@@ -2287,8 +2287,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_from_direction:10.0:mean:PT10M": {
           "type": "Parameter",
@@ -2304,8 +2304,8 @@
             "method": "mean",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_from_direction:10.0:mean:PT1H": {
           "type": "Parameter",
@@ -2321,8 +2321,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_from_direction:10.0:mean:PT1M": {
           "type": "Parameter",
@@ -2338,8 +2338,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_from_direction:10.0:mean:PT2M": {
           "type": "Parameter",
@@ -2355,8 +2355,8 @@
             "method": "mean",
             "period": "PT2M"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_from_direction:10.0:point:PT0S": {
           "type": "Parameter",
@@ -2372,8 +2372,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_from_direction:10.0:point:PT10M": {
           "type": "Parameter",
@@ -2389,8 +2389,8 @@
             "method": "point",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "wind_from_direction",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_from_direction",
+          "metocean:level": 10
         },
         "wind_speed:10.0:maximum:PT0S": {
           "type": "Parameter",
@@ -2406,8 +2406,8 @@
             "method": "maximum",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:maximum:PT1H": {
           "type": "Parameter",
@@ -2423,8 +2423,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:maximum:PT3H": {
           "type": "Parameter",
@@ -2440,8 +2440,8 @@
             "method": "maximum",
             "period": "PT3H"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:mean:PT10M": {
           "type": "Parameter",
@@ -2457,8 +2457,8 @@
             "method": "mean",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:mean:PT1H": {
           "type": "Parameter",
@@ -2474,8 +2474,8 @@
             "method": "mean",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:mean:PT1M": {
           "type": "Parameter",
@@ -2491,8 +2491,8 @@
             "method": "mean",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:mean:PT2M": {
           "type": "Parameter",
@@ -2508,8 +2508,8 @@
             "method": "mean",
             "period": "PT2M"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:minimum:PT1H": {
           "type": "Parameter",
@@ -2525,8 +2525,8 @@
             "method": "minimum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:point:PT0S": {
           "type": "Parameter",
@@ -2542,8 +2542,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed:10.0:point:PT10M": {
           "type": "Parameter",
@@ -2559,8 +2559,8 @@
             "method": "point",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "wind_speed",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed",
+          "metocean:level": 10
         },
         "wind_speed_of_gust:10.0:maximum:PT10M": {
           "type": "Parameter",
@@ -2576,8 +2576,8 @@
             "method": "maximum",
             "period": "PT10M"
           },
-          "rodeo:standard_name": "wind_speed_of_gust",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed_of_gust",
+          "metocean:level": 10
         },
         "wind_speed_of_gust:10.0:maximum:PT1H": {
           "type": "Parameter",
@@ -2593,8 +2593,8 @@
             "method": "maximum",
             "period": "PT1H"
           },
-          "rodeo:standard_name": "wind_speed_of_gust",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed_of_gust",
+          "metocean:level": 10
         },
         "wind_speed_of_gust:10.0:maximum:PT1M": {
           "type": "Parameter",
@@ -2610,8 +2610,8 @@
             "method": "maximum",
             "period": "PT1M"
           },
-          "rodeo:standard_name": "wind_speed_of_gust",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed_of_gust",
+          "metocean:level": 10
         },
         "wind_speed_of_gust:10.0:maximum:PT20M": {
           "type": "Parameter",
@@ -2627,8 +2627,8 @@
             "method": "maximum",
             "period": "PT20M"
           },
-          "rodeo:standard_name": "wind_speed_of_gust",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed_of_gust",
+          "metocean:level": 10
         },
         "wind_speed_of_gust:10.0:maximum:PT2M": {
           "type": "Parameter",
@@ -2644,8 +2644,8 @@
             "method": "maximum",
             "period": "PT2M"
           },
-          "rodeo:standard_name": "wind_speed_of_gust",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed_of_gust",
+          "metocean:level": 10
         },
         "wind_speed_of_gust:10.0:point:PT0S": {
           "type": "Parameter",
@@ -2661,8 +2661,8 @@
             "method": "point",
             "period": "PT0S"
           },
-          "rodeo:standard_name": "wind_speed_of_gust",
-          "rodeo:level": 10
+          "metocean:standard_name": "wind_speed_of_gust",
+          "metocean:level": 10
         }
       }
     }

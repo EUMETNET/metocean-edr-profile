@@ -4,7 +4,7 @@ Conformance with this standard shall be checked using the tests specified in Ann
 
 _OGC API - Environmental Data Retrieval_ (EDR) provides a family of lightweight interfaces to access Environmental Data resources. Each resource addressed by an EDR API maps to a defined query pattern.  This standard is a profile/extension of EDR.  Conformance to this standard requires demonstrated conformance to the applicable Conformance Classes of _OGC API - Environmental Data Retrieval - Part 1: Core_.
 
-Implementors of EDR API within the RODEO project are required to comply with the RODEO EDR Profile.  A RODEO EDR API shall therefore be compliant with OGC API - Environmental Data Retrieval - Part 1: Core.
+Implementors of EDR API are required to comply with the MetOcean EDR Profile.  A MetOcean EDR Profile shall therefore be compliant with OGC API - Environmental Data Retrieval - Part 1: Core.
 
 This standard identifies the following Requirements Classes which define the functional requirements.
 
