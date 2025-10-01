@@ -3,7 +3,7 @@
 |===
 ^|*Requirement {counter:req-id}* |*/req/core/openapi*
 ^|A |An API definition SHALL be described using an OpenAPI document (version 3.1 or higher).
-^|B |The OpenAPI document SHALL be encoded as JSON.
-^|C |The OpenAPI document SHALL be made available in the API Landing Page as a link object with a relation type of `service-desc`.
+^|B |The OpenAPI document SHALL be encoded EITHER as "application/vnd.oai.openapi+json" OR as "application/vnd.oai.openapi+yaml", optionally suffixed with a version number.
+^|C |The OpenAPI document SHALL be made available in the API Landing Page as a link object with a relation type of `service-desc` and on of the types given in B.
 ^|D |API documentation SHALL be made available in the API Landing Page as a link object with a relation type of `service-doc` and content type of `text/html`.
 |===
