@@ -25,7 +25,14 @@ Check that the value of the returned HTTP status header is 200.
 
 [.component,class=step]
 --
-In the `links` array in the landing page response, find the object with `rel` set to `service-desc` and `type` set to `application/vnd.oai.openapi+json;version=3.1`.
+In the `links` array in the landing page response, find the object with `rel` set to `service-desc` and `type` matching one of the following strings:
+
+* `application/openapi+json`
+* `application/openapi+yaml`
+* `application/vnd.oai.openapi+json`
+* `application/vnd.oai.openapi+yaml`
+
+Optionally, the string may be suffixed with a version number like `;version=3.1`. In that case, check that the version is >= 3.1.
 --
 
 [.component,class=step]
