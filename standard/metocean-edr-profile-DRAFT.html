@@ -455,7 +455,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock"><strong class="big">The provision of Open Access to Public meteorological Data and Development of Shared federated Data Infrastructure for the Development of information Products and Services</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-10-01</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Date: 2025-10-03</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><p class="tableblock">Version: 0.1.0</p></td>
@@ -1005,19 +1005,25 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">B</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>The OpenAPI document SHALL be encoded EITHER as "application/vnd.oai.openapi+json" OR as "application/vnd.oai.openapi+yaml", optionally suffixed with a version number.</p>
+<p>The OpenAPI document SHALL be encoded as one of the following media types: <code>application/openapi+json</code>, <code>application/vnd.oai.openapi+yaml</code>, <code>application/vnd.oai.openapi+json</code>, <code>application/vnd.oai.openapi+yaml</code>.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">C</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
-<p>The OpenAPI document SHALL be made available in the API Landing Page as a link object with a relation type of <code>service-desc</code> and on of the types given in B.</p>
+<p>The OpenAPI document SHALL be made available in the API Landing Page as a link object with a relation type of <code>service-desc</code> and one of the types given in B.</p>
 </div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">D</p></td>
 <td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
 <p>API documentation SHALL be made available in the API Landing Page as a link object with a relation type of <code>service-doc</code> and content type of <code>text/html</code>.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-center valign-top" style="background-color: #FFFFFF;"><p class="tableblock">E</p></td>
+<td class="tableblock halign-left valign-top" style="background-color: #FFFFFF;"><div class="content"><div class="paragraph">
+<p>The media type MAY contain a suffix indicating the OpenAPI version used, e.g. <code>;version=3.1</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -1776,7 +1782,26 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 <div class="openblock component">
 <div class="content">
 <div class="paragraph">
-<p>In the <code>links</code> array in the landing page response, find the object with <code>rel</code> set to <code>service-desc</code> and <code>type</code> set to <code>application/vnd.oai.openapi+json;version=3.1</code>.</p>
+<p>In the <code>links</code> array in the landing page response, find the object with <code>rel</code> set to <code>service-desc</code> and <code>type</code> matching one of the following strings:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>application/openapi+json</code></p>
+</li>
+<li>
+<p><code>application/openapi+yaml</code></p>
+</li>
+<li>
+<p><code>application/vnd.oai.openapi+json</code></p>
+</li>
+<li>
+<p><code>application/vnd.oai.openapi+yaml</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Optionally, the string may be suffixed with a version number like <code>;version=3.1</code>. In that case, check that the version is &gt;= 3.1.</p>
 </div>
 </div>
 </div>
@@ -2796,7 +2821,7 @@ YAML is a superset of JSON, and in this standard are regarded as equivalent.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2025-10-01 06:58:27 UTC
+Last updated 2025-10-03 10:11:33 UTC
 </div>
 </div>
 </body>
