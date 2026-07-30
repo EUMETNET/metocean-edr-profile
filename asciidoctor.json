@@ -2,7 +2,7 @@
     "0": {
         "OGC_doc_number": "26-027",
         "urn": "http://www.opengis.net/doc/profile/metocean-ogcapi-environmental-data-retrieval/1.0",
-        "title": "MetOcean profile for OGC API - Environmental Data Retrieval",
+        "title": "MetOcean Profile for OGC API - Environmental Data Retrieval",
         "path": "profile/document.adoc",
         "options": [
             "--trace"
